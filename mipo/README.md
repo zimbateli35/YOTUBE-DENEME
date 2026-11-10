@@ -10,7 +10,7 @@ A kids' YouTube Shorts series (ages 2–7). Episode 1: **"Mipo and the Missing R
 | `output/` | **v1 2D storyboard animatic** (kept unchanged) |
 | `src/` | Code for the 2D storyboard animatic |
 
-**Start here:** [`production/SETUP.md`](production/SETUP.md), then [`production/WORKFLOW.md`](production/WORKFLOW.md).
+**Start here:** [`production/NEXT_STEPS.md`](production/NEXT_STEPS.md) (uses [`production/SETUP.md`](production/SETUP.md) for Windows setup).
 
 ## Status
 | Item | Status |
@@ -29,6 +29,7 @@ Use it **for timing, staging and story beats only**. Known differences from the 
 - Mipo's pants are **blue** in the animatic. The banner (now authoritative) shows **dark brown cargo pants**.
 - The baby deer is partly cut off in the 20–22 s close-up. The spec now requires it to be fully visible.
 - The narration in `output/audio/` is a robotic offline placeholder voice, **not** the final voice.
+- Its first line is "Good morning, Mipo!". The final script uses **"Good morning! I'm Mipo!"**, with one Mipo voice throughout.
 
 Both visual issues are already fixed in the 2D source (`src/characters.py`, `src/render.py`),
 but the animatic was **not** re-rendered on purpose, so the delivered MP4 stays unchanged. If you

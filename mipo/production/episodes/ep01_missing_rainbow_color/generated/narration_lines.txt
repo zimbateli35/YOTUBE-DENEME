@@ -1,4 +1,4 @@
-L01	Good morning, Mipo!
+L01	Good morning! I'm Mipo!
 L02	Oh no! A rainbow color is missing!
 L03	Where did the purple go?
 L04	Let's find it!

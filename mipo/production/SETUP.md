@@ -1,75 +1,129 @@
-# Setup on your computer (macOS or Windows)
+# Setup on your computer (Windows first; macOS notes at the end)
 
-## 1. Software
+Everything here is free to install. **Nothing in this setup buys or activates a paid service.**
+Paid plans are only needed later, when you generate final assets (see `NEXT_STEPS.md`).
 
-| Tool | Why | Install |
-|---|---|---|
-| **Git** (+ optional GitHub Desktop) | Get and update this repo | git-scm.com / desktop.github.com |
-| **Python 3.10+** | Runs `tools/*.py` (standard library only, no `pip install` needed) | python.org, or `brew install python` |
-| **FFmpeg** | Used by `tools/assemble.py` | macOS: `brew install ffmpeg` · Windows: `winget install Gyan.FFmpeg` |
-| **DaVinci Resolve** (free) or **CapCut** | Final edit, color matching, SFX placement | blackmagicdesign.com / capcut.com |
-| VS Code (optional) | Edit `episode.json` and the prompts | code.visualstudio.com |
-| Claude Code (optional) | Keep working on this pipeline with an assistant | claude.ai/code |
-| Blender (optional) | Only if you commission a rigged 3D Mipo | blender.org |
+## Windows 10/11, step by step
 
-Check the install:
-```bash
-git --version && python3 --version && ffmpeg -version | head -1
+Open **PowerShell** (Start menu → type "PowerShell" → Windows PowerShell). Run each block, then
+**close and reopen PowerShell** after installing, so the new programs are on your PATH.
+
+### 1. Install the free tools (winget is built into Windows 10/11)
+```powershell
+winget install --id Git.Git -e
+winget install --id Python.Python.3.12 -e
+winget install --id Gyan.FFmpeg -e
 ```
+Optional, also free:
+```powershell
+winget install --id GitHub.GitHubDesktop -e        # point-and-click Git
+winget install --id Microsoft.VisualStudioCode -e  # edit JSON / Markdown
+```
+Video editor (free): **DaVinci Resolve** from blackmagicdesign.com, or **CapCut** from capcut.com.
 
-## 2. Get the project
-```bash
+### 2. Check the install (in a NEW PowerShell window)
+```powershell
+git --version
+py --version
+ffmpeg -version
+```
+All three should print a version. Tips:
+- On Windows use **`py`** (the Python launcher). If `python` opens the Microsoft Store, use `py`
+  instead, or turn off the "python.exe" app execution alias in Settings → Apps → Advanced app settings.
+- If `ffmpeg` is "not recognized", close and reopen PowerShell, or sign out and back in.
+
+### 3. Get the project
+Use a short folder **outside OneDrive** (OneDrive syncing large video files gets slow):
+```powershell
+mkdir C:\Projects -Force
+cd C:\Projects
 git clone https://github.com/zimbateli35/yotube-deneme.git
 cd yotube-deneme
-git checkout ccr-bdc662ca-ibq7m0        # until it is merged into main
+git checkout ccr-bdc662ca-ibq7m0     # until the pull request is merged; afterwards: git checkout main
 cd mipo
-python3 tools/build_package.py production/episodes/ep01_missing_rainbow_color
+py tools\build_package.py production\episodes\ep01_missing_rainbow_color
 ```
-Open `production/episodes/ep01_missing_rainbow_color/generated/PROMPTS.md`; everything you need to paste is in there.
+You should see `wrote production\episodes\ep01_missing_rainbow_color\generated`.
 
-## 3. Accounts and API access
+### 4. Open the package
+```powershell
+explorer production\episodes\ep01_missing_rainbow_color\generated
+```
+- `PROMPTS.md`: all six scene prompts (or use the `.txt` files in `prompts\` to copy and paste)
+- `NARRATION_SCRIPT.md`: the timed voice script
+- `subtitles.srt`: English captions
 
-| Need | Service (pick one per row) | Web UI enough? | API key needed for |
+The character references are in `C:\Projects\yotube-deneme\mipo\reference\`. The MASTER is
+`cover_landscape_with_friends.png`.
+
+### 5. API key for the voice script (only when you are ready for ElevenLabs)
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+Fill in `ELEVENLABS_API_KEY=` and `ELEVENLABS_VOICE_ID=`, then save. `.env` is git-ignored, so never
+commit it or paste keys into chat. First test without spending credits:
+```powershell
+py tools\tts_elevenlabs.py production\episodes\ep01_missing_rainbow_color --dry-run
+```
+
+### 6. Assemble (after you have clips and voice files)
+```powershell
+py tools\assemble.py production\episodes\ep01_missing_rainbow_color --endcard --subs
+```
+The end card uses `C:\Windows\Fonts\arialbd.ttf` automatically. To use another font, pass
+`--font C:\Path\To\Font.ttf`. The output goes to `final\ep01_missing_rainbow_color_vN.mp4` and never
+overwrites an earlier version.
+
+Timing test with placeholder slates (free, no AI services needed):
+```powershell
+py tools\assemble.py production\episodes\ep01_missing_rainbow_color --allow-missing
+```
+
+### 7. Saving your work back to GitHub
+```powershell
+cd C:\Projects\yotube-deneme
+git add mipo
+git commit -m "Ep1: approved start frames"
+git push
+```
+Large media: GitHub rejects single files over 100 MB. If you keep many clips in git, run once:
+```powershell
+winget install --id GitHub.GitLFS -e
+git lfs install
+git lfs track "*.mp4" "*.wav"
+git add .gitattributes
+```
+Otherwise keep raw takes in Google Drive or Dropbox. `clips\raw\` and `audio\voice\takes\` are already git-ignored.
+
+## Accounts you will need later (do not buy yet)
+
+| Need | Options (pick one per row) | Web UI enough? | API key needed? |
 |---|---|---|---|
-| Character sheet + start frames | Midjourney · ChatGPT (GPT-image) · Google Gemini · FLUX Kontext (BFL/fal/Replicate) | Yes | Only for automation |
-| 3D image-to-video | Kling · Runway · Google Veo 3 (Flow / Gemini API / Vertex AI) · Luma · Hailuo | Yes | Only for automation |
-| Natural voice | **ElevenLabs** (Voice Design) · or a human voice actor | Yes | `tools/tts_elevenlabs.py` |
-| Music | Composer · Suno/Udio paid tier · Epidemic Sound · Artlist | Yes | – |
-| SFX | ElevenLabs SFX · Epidemic · Freesound (CC0) | Yes | – |
-| Lip sync (optional) | Kling lip-sync · Runway Act-Two · Hedra · Sync Labs | Yes | – |
+| Character sheet + start frames | Midjourney · ChatGPT image generation · Google Gemini · FLUX Kontext | Yes | No |
+| 3D image-to-video | Kling · Runway · Google Veo 3 (Flow) · Luma · Hailuo | Yes | No |
+| Natural Mipo voice | **ElevenLabs** Voice Design, or a human voice actor | Yes | Only for `tts_elevenlabs.py` |
+| Music | Composer · Suno/Udio paid tier · Epidemic Sound · Artlist | Yes | No |
+| SFX | ElevenLabs SFX · Epidemic · Freesound (CC0) | Yes | No |
+| Lip sync (optional) | Kling lip-sync · Runway Act-Two · Hedra · Sync Labs | Yes | No |
 
-Use **paid plans that grant commercial/YouTube monetization rights**, and read each service's
-rules on children's content.
+When you do subscribe, choose plans that include **commercial / YouTube monetization rights**, and read
+each service's rules on children's content and child-like voices.
 
-### API keys (only the ElevenLabs script needs one today)
-```bash
-cp .env.example .env      # inside mipo/
-# edit .env:
-# ELEVENLABS_API_KEY=...
-# ELEVENLABS_VOICE_ID=...   (from ElevenLabs > Voices > your "Mipo" voice > ID)
-```
-`.env` is git-ignored. Never commit keys or paste them into chat.
+## macOS
+Same steps with Terminal. Install the tools with Homebrew (`brew install git python ffmpeg`), use
+`python3` instead of `py`, `/` instead of `\`, `cp .env.example .env` and `open -e .env`.
 
-Test with a single line first:
-```bash
-python3 tools/tts_elevenlabs.py production/episodes/ep01_missing_rainbow_color --line L01 --takes 1
+## Folder layout per episode
 ```
-> `tts_elevenlabs.py` was written against ElevenLabs' public REST API but could not be run in the
-> build environment (no network access). `--dry-run` was tested, and so was `assemble.py` (end to
-> end, with test clips).
-
-## 4. Where files go (per episode)
+production\episodes\<ep>\
+  episode.json            <- you edit this, then re-run build_package.py
+  generated\              <- prompts, script, SRT (commit)
+  frames\                 <- approved start/end frames (commit)
+  clips\scene_01.mp4 ...  <- approved AI clips (commit via Git LFS, or keep in cloud storage)
+  clips\raw\              <- all other takes (git-ignored)
+  audio\voice\L01.mp3 ... <- chosen voice takes (commit)
+  audio\voice\takes\      <- all TTS takes (git-ignored)
+  audio\music.wav, audio\sfx.wav
+  final\<slug>_vN.mp4     <- assembled outputs (never overwritten)
 ```
-production/episodes/<ep>/
-  episode.json            <- you edit this
-  generated/              <- build_package.py output (commit it)
-  frames/                 <- approved start/end frames (commit)
-  clips/scene_NN.mp4      <- approved AI clips (commit via Git LFS or keep in cloud storage)
-  clips/raw/              <- all other takes (git-ignored; keep in Drive/Dropbox)
-  audio/voice/LNN.mp3     <- chosen takes (commit)
-  audio/voice/takes/      <- every TTS take (git-ignored)
-  audio/music.wav, sfx.wav
-  final/<slug>_vN.mp4     <- assembled outputs (never overwritten)
-```
-Large media: GitHub rejects files over 100 MB. For many clips, enable Git LFS
-(`git lfs install && git lfs track "*.mp4" "*.wav"`) or keep the raw files in cloud storage.

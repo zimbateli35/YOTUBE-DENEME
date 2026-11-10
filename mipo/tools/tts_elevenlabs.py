@@ -12,7 +12,7 @@ Setup (see production/SETUP.md):
 Usage:
   python3 tools/tts_elevenlabs.py production/episodes/ep01_missing_rainbow_color --takes 3
   python3 tools/tts_elevenlabs.py <ep> --line L08 --takes 5    # redo one line
-  python3 tools/tts_elevenlabs.py <ep> --use-alt L01           # use a line's "alt" text
+  python3 tools/tts_elevenlabs.py <ep> --use-alt L03           # use a line's optional "alt" text
   python3 tools/tts_elevenlabs.py <ep> --dry-run               # show what would be sent
 
 NOTE: written against ElevenLabs' public REST API (POST /v1/text-to-speech/{voice_id}).
@@ -34,7 +34,7 @@ API = "https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_441
 def load_env():
     path = os.path.join(ROOT, ".env")
     if os.path.exists(path):
-        for line in open(path):
+        for line in open(path, encoding="utf-8"):
             line = line.strip()
             if line and not line.startswith("#") and "=" in line:
                 k, v = line.split("=", 1)
@@ -81,7 +81,7 @@ def main():
     args = ap.parse_args()
 
     load_env()
-    ep = json.load(open(os.path.join(args.episode_dir, "episode.json")))
+    ep = json.load(open(os.path.join(args.episode_dir, "episode.json"), encoding="utf-8"))
     out = os.path.join(args.episode_dir, "audio", "voice", "takes")
     os.makedirs(out, exist_ok=True)
     key = os.environ.get("ELEVENLABS_API_KEY")

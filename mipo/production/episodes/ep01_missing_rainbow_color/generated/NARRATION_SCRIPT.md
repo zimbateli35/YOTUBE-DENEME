@@ -1,13 +1,13 @@
 # Mipo and the Missing Rainbow Color - Narration script
 
-**Voice:** Mipo (single voice for all lines). Warm, cheerful, natural-sounding young boy, about 6-7 years old, clear American English, friendly and calm, gentle excitement, never shouting. Pace about 2.2-2.6 words per second.  
-**Note on line 1:** 'Good morning, Mipo!' is written as a greeting TO Mipo. Either record it with a second, gentle narrator voice, or use the alternate line so the whole episode stays in Mipo's voice.
+**Voice:** Mipo - ONE consistent voice for all ten lines (no separate narrator). Warm, cheerful, natural-sounding young boy, about 6-7 years old, clear American English, friendly and calm, gentle excitement, never shouting. Pace about 2.2-2.6 words per second.  
+**Consistency:** Use the same voice (same ElevenLabs Voice ID, or the same actor in one session) and the same settings for every line and every episode.
 
 Times are positions on the final 30.0 s timeline. `Must end` is the latest the line may finish before it collides with the next beat. Record each line as its own file (`L01.wav` ... `L10.wav`), 2-3 takes each, and keep the best take.
 
 | ID | Start | Must end | Line | Delivery |
 |---|---|---|---|---|
-| L01 | 0.30 | 1.90 | Good morning, Mipo! (alt: *Good morning! I'm Mipo!*) | bright, sunny, slightly sleepy-happy smile in the voice. |
+| L01 | 0.30 | 1.90 | Good morning! I'm Mipo! | bright, sunny, friendly self-introduction with a sleepy-happy smile in the voice. |
 | L02 | 2.25 | 4.80 | Oh no! A rainbow color is missing! | gentle surprise, NOT scared; small pause after 'Oh no!'. |
 | L03 | 5.40 | 7.30 | Where did the purple go? | curious, wondering, rising question. |
 | L04 | 7.60 | 9.20 | Let's find it! | determined and excited, warm. |
@@ -20,7 +20,7 @@ Times are positions on the final 30.0 s timeline. `Must end` is the latest the l
 
 ## Plain script
 
-[0:00.30] Good morning, Mipo!
+[0:00.30] Good morning! I'm Mipo!
 [0:02.25] Oh no! A rainbow color is missing!
 [0:05.40] Where did the purple go?
 [0:07.60] Let's find it!

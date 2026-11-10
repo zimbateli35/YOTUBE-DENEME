@@ -62,7 +62,7 @@ def main():
     if not shutil.which("ffmpeg"):
         sys.exit("ffmpeg not found on PATH (see production/SETUP.md)")
     ep_dir = os.path.abspath(args.episode_dir)
-    ep = json.load(open(os.path.join(ep_dir, "episode.json")))
+    ep = json.load(open(os.path.join(ep_dir, "episode.json"), encoding="utf-8"))
     W, H, FPS = ep["format"]["width"], ep["format"]["height"], ep["format"]["fps"]
     total = ep["format"]["duration"]
     X = max(0.0, args.xfade)

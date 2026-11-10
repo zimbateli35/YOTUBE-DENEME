@@ -38,8 +38,8 @@ def mmss(s):
 
 
 def main(ep_dir):
-    ch = json.load(open(CHAR))
-    ep = json.load(open(os.path.join(ep_dir, "episode.json")))
+    ch = json.load(open(CHAR, encoding="utf-8"))
+    ep = json.load(open(os.path.join(ep_dir, "episode.json"), encoding="utf-8"))
     out = os.path.join(ep_dir, "generated")
     pdir = os.path.join(out, "prompts")
     os.makedirs(pdir, exist_ok=True)
@@ -48,7 +48,7 @@ def main(ep_dir):
     master = ch["authority"][0].split()[0]
 
     def write(name, text):
-        with open(os.path.join(pdir, name), "w") as f:
+        with open(os.path.join(pdir, name), "w", encoding="utf-8") as f:
             f.write(text.strip() + "\n")
 
     sheet = (f"Character turnaround model sheet of {ch['identity_lock']} "
@@ -100,9 +100,9 @@ def main(ep_dir):
         rows.append([n, sc["name"], sc["start"], sc["end"], dur, sc["location"], sc["camera"],
                      f"prompts/scene_{n:02d}_image.txt", f"prompts/scene_{n:02d}_video.txt",
                      f"clips/scene_{n:02d}.mp4"])
-    open(os.path.join(out, "PROMPTS.md"), "w").write("\n".join(md) + "\n")
+    open(os.path.join(out, "PROMPTS.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
 
-    with open(os.path.join(out, "shotlist.csv"), "w", newline="") as f:
+    with open(os.path.join(out, "shotlist.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["scene", "name", "start", "end", "duration", "location", "camera",
                     "image_prompt", "video_prompt", "approved_clip"])
@@ -111,7 +111,7 @@ def main(ep_dir):
     v = ep["voice"]
     nm = [f"# {ep['title']} - Narration script", "",
           f"**Voice:** {v['character']}. {v['description']}  ",
-          f"**Note on line 1:** {v['line_01_note']}", "",
+          f"**Consistency:** {v['consistency']}", "",
           "Times are positions on the final 30.0 s timeline. `Must end` is the latest the line may finish "
           "before it collides with the next beat. Record each line as its own file "
           "(`L01.wav` ... `L10.wav`), 2-3 takes each, and keep the best take.", "",
@@ -125,12 +125,12 @@ def main(ep_dir):
     nm += ["", "## Sound effects cue sheet", "", "| Time | Cue |", "|---|---|"]
     nm += [f"| {c['t']:.2f} | {c['cue']} |" for c in ep["sfx"]]
     nm += ["", "## Music brief", "", ep["music"], ""]
-    open(os.path.join(out, "NARRATION_SCRIPT.md"), "w").write("\n".join(nm) + "\n")
-    open(os.path.join(out, "narration_lines.txt"), "w").write(
+    open(os.path.join(out, "NARRATION_SCRIPT.md"), "w", encoding="utf-8").write("\n".join(nm) + "\n")
+    open(os.path.join(out, "narration_lines.txt"), "w", encoding="utf-8").write(
         "\n".join(f"{ln['id']}\t{ln['text']}" for ln in ep["narration"]) + "\n")
     srt = [f"{i}\n{srt_time(ln['start'])} --> {srt_time(ln['must_end'])}\n{ln['text']}\n"
            for i, ln in enumerate(ep["narration"], 1)]
-    open(os.path.join(out, "subtitles.srt"), "w").write("\n".join(srt))
+    open(os.path.join(out, "subtitles.srt"), "w", encoding="utf-8").write("\n".join(srt))
     print("wrote", out)
 
 

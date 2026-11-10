@@ -63,8 +63,8 @@ first, approves them, and only then animates them.
 ## 4. Narration (natural boy voice)
 - **Fastest:** use **ElevenLabs Voice Design** to create a "young American boy, 6–7, warm, cheerful,
   calm, clear" voice. Name it *Mipo* and reuse the same Voice ID for every episode. Then run
-  `python3 tools/tts_elevenlabs.py production/episodes/<ep> --takes 3`
-  (add `--use-alt L01` if Mipo should say "Good morning! I'm Mipo!").
+  `py tools\tts_elevenlabs.py production\episodes\<ep> --takes 3` (macOS: `python3 tools/tts_elevenlabs.py ...`). All ten lines, including the opening
+  "Good morning! I'm Mipo!", are spoken by this one Mipo voice; there is no separate narrator.
 - **Most natural, long-term:** hire a voice actor who specializes in kid voices (usually an adult)
   through Voices.com, Voice123 or Fiverr. Send them `generated/NARRATION_SCRIPT.md`, which has the
   timings and delivery notes. Ask for a separate 48 kHz WAV per line, with 3 takes each, and get a written
@@ -85,7 +85,8 @@ first, approves them, and only then animates them.
 
 ## 6. Assemble
 ```bash
-python3 tools/assemble.py production/episodes/ep01_missing_rainbow_color --endcard --subs
+py tools\assemble.py production\episodes\ep01_missing_rainbow_color --endcard --subs   # Windows
+# macOS: python3 tools/assemble.py production/episodes/ep01_missing_rainbow_color --endcard --subs
 ```
 This conforms every clip to 1080×1920 at 30 fps, applies 0.3 s crossfades, places each line at its
 timestamp, ducks the music under the voice, normalizes to about −14 LUFS and adds the end card.
@@ -103,9 +104,9 @@ Go through `QC_CHECKLIST.md` frame by frame. Character fidelity is the release g
 - Use a title, a short description and `#Shorts`. The video must be vertical and 60 s or shorter.
 
 ## New episode in 5 steps
-1. `cp -r production/episodes/ep01_missing_rainbow_color production/episodes/ep02_<slug>`, then delete
+1. Copy the folder `production\episodes\ep01_missing_rainbow_color` to `production\episodes\ep02_<slug>`, then delete
    the copy's `generated/`, `clips/`, `audio/`, `final/` and `frames/`.
 2. Edit `episode.json`: title, slug, scenes, narration and timings. Leave the character file alone.
-3. `python3 tools/build_package.py production/episodes/ep02_<slug>`
+3. `py tools\build_package.py production\episodes\ep02_<slug>` (macOS: `python3 tools/build_package.py ...`)
 4. Run steps 2–7 above with the same banner, approved sheet and Voice ID.
 5. Commit `episode.json`, `generated/`, approved frames and the final MP4.

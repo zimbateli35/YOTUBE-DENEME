@@ -144,18 +144,17 @@
     "note": "Add in the editor (not inside the AI video) so the text is crisp and spelled correctly."
   },
   "voice": {
-    "character": "Mipo (single voice for all lines)",
+    "character": "Mipo - ONE consistent voice for all ten lines (no separate narrator)",
     "description": "Warm, cheerful, natural-sounding young boy, about 6-7 years old, clear American English, friendly and calm, gentle excitement, never shouting. Pace about 2.2-2.6 words per second.",
-    "line_01_note": "'Good morning, Mipo!' is written as a greeting TO Mipo. Either record it with a second, gentle narrator voice, or use the alternate line so the whole episode stays in Mipo's voice."
+    "consistency": "Use the same voice (same ElevenLabs Voice ID, or the same actor in one session) and the same settings for every line and every episode."
   },
   "narration": [
     {
       "id": "L01",
       "start": 0.3,
       "must_end": 1.9,
-      "text": "Good morning, Mipo!",
-      "alt": "Good morning! I'm Mipo!",
-      "delivery": "bright, sunny, slightly sleepy-happy smile in the voice"
+      "text": "Good morning! I'm Mipo!",
+      "delivery": "bright, sunny, friendly self-introduction with a sleepy-happy smile in the voice"
     },
     {
       "id": "L02",

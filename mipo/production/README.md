@@ -6,8 +6,9 @@ yet**, because that needs external services (see `SETUP.md`). Nothing in this fo
 
 | Document | What it is |
 |---|---|
+| [`NEXT_STEPS.md`](NEXT_STEPS.md) | **Start here:** exact next steps for the first 3D episode (free steps first) |
 | [`WORKFLOW.md`](WORKFLOW.md) | The step-by-step pipeline: character lock → start frames → image-to-video → voice → music → assemble → QC → publish |
-| [`SETUP.md`](SETUP.md) | Software, accounts and API keys to set up on your computer |
+| [`SETUP.md`](SETUP.md) | Windows-first setup: software, project, API keys, saving to GitHub |
 | [`QC_CHECKLIST.md`](QC_CHECKLIST.md) | Character-fidelity and technical release gate |
 | [`character/mipo_character.json`](character/mipo_character.json) | Locked character definition (identity prompt, negative prompt, friends, world) |
 | [`episodes/ep01_missing_rainbow_color/episode.json`](episodes/ep01_missing_rainbow_color/episode.json) | Episode 1 spec: six scenes, staging, beats, narration timestamps, SFX cues, music brief |
