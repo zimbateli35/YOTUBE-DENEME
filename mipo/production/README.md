@@ -7,6 +7,7 @@ yet**, because that needs external services (see `SETUP.md`). Nothing in this fo
 | Document | What it is |
 |---|---|
 | [`TEST_01_CHARACTER_LOCK_AND_SCENE1.md`](TEST_01_CHARACTER_LOCK_AND_SCENE1.md) | **Current task:** front/side/back turnaround + Scene 1 start frame + 5 s animation test (free tiers only) |
+| [`AUDIO_AND_API_INTEGRATION.md`](AUDIO_AND_API_INTEGRATION.md) | ElevenLabs voices/SFX (pricing, credit safety), 4-track mix and sync, image/video API tools, first 5-second scene recipe, integration test |
 | [`NEXT_STEPS.md`](NEXT_STEPS.md) | **Start here:** exact next steps for the first 3D episode (free steps first) |
 | [`WORKFLOW.md`](WORKFLOW.md) | The step-by-step pipeline: character lock → start frames → image-to-video → voice → music → assemble → QC → publish |
 | [`SETUP.md`](SETUP.md) | Windows-first setup: software, project, API keys, saving to GitHub |

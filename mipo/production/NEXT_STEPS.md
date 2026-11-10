@@ -42,7 +42,7 @@ rights. Rough volume for one episode: about 10–20 image generations, about 20�
 3. **Clips:** animate each frame with `scene_NN_video.txt` (9:16, 5 s), make 3–4 takes and save the best as
    `clips\scene_NN.mp4`.
 4. **Voice:** create or select the one Mipo voice, put its ID in `.env`, then run
-   `py tools\tts_elevenlabs.py production\episodes\ep01_missing_rainbow_color --takes 3`.
+   `py tools\tts_elevenlabs.py tts production\episodes\ep01_missing_rainbow_color --takes 3 --yes` (check `credits` first).
    Copy the best take of each line to `audio\voice\L01.mp3` … `L10.mp3`. Alternatively, send
    `NARRATION_SCRIPT.md` to a voice actor.
 5. **Music/SFX:** save a licensed or commissioned 30 s track as `audio\music.wav` (optional:

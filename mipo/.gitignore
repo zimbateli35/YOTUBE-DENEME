@@ -8,3 +8,8 @@ production/episodes/*/clips/raw/
 # unapproved generation candidates
 reference/candidates/
 production/episodes/*/frames/candidates/
+# generation takes and build products (approved files are committed)
+production/episodes/*/audio/sfx/takes/
+production/episodes/*/audio/build/
+production/episodes/*/audio/voice/_superseded/
+production/episodes/*/audio/sfx/_superseded/

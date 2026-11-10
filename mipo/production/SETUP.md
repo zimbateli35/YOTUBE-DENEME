@@ -56,21 +56,26 @@ explorer production\episodes\ep01_missing_rainbow_color\generated
 The character references are in `C:\Projects\yotube-deneme\mipo\reference\`. The MASTER is
 `cover_landscape_with_friends.png`.
 
-### 5. API key for the voice script (only when you are ready for ElevenLabs)
+### 5. API keys (only when you're ready; see AUDIO_AND_API_INTEGRATION.md)
 ```powershell
 Copy-Item .env.example .env
 notepad .env
 ```
-Fill in `ELEVENLABS_API_KEY=` and `ELEVENLABS_VOICE_ID=`, then save. `.env` is git-ignored, so never
-commit it or paste keys into chat. First test without spending credits:
+Fill in `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_MIPO` (and `OPENAI_API_KEY` / `RUNWAYML_API_SECRET`
+only if you use those paid APIs). `.env` is git-ignored, so never commit it or paste keys into chat.
+Check your credits and preview the cost without spending anything:
 ```powershell
-py tools\tts_elevenlabs.py production\episodes\ep01_missing_rainbow_color --dry-run
+py tools\tts_elevenlabs.py credits
+py tools\tts_elevenlabs.py tts production\episodes\ep01_missing_rainbow_color --scene 1
 ```
+Run the offline integration test once (no keys, no cost): `py tools\tests\test_integration.py`
 
 ### 6. Assemble (after you have clips and voice files)
 ```powershell
+py tools\mix_audio.py production\episodes\ep01_missing_rainbow_color
 py tools\assemble.py production\episodes\ep01_missing_rainbow_color --endcard --subs
 ```
+Single scene: add `--scene 1` to both commands.
 The end card uses `C:\Windows\Fonts\arialbd.ttf` automatically. To use another font, pass
 `--font C:\Path\To\Font.ttf`. The output goes to `final\ep01_missing_rainbow_color_vN.mp4` and never
 overwrites an earlier version.

@@ -6,7 +6,7 @@ A kids' YouTube Shorts series (ages 2–7). Episode 1: **"Mipo and the Missing R
 |---|---|
 | [`production/`](production/README.md) | **3D production package**: workflow, setup, QC checklist, locked character file, Episode 1 spec, six-scene 3D prompts, timed narration script, subtitles |
 | [`reference/`](reference/README.md) | Channel banner (**MASTER character reference**) and supporting covers |
-| [`tools/`](tools) | Pipeline scripts: `build_package.py`, `tts_elevenlabs.py`, `assemble.py` |
+| [`tools/`](tools) | Pipeline scripts: `build_package.py`, `tts_elevenlabs.py` (voices + SFX), `mix_audio.py` (4 tracks + sync), `gen_image.py`, `gen_video.py`, `assemble.py`, `tests/test_integration.py` |
 | `output/` | **v1 2D storyboard animatic** (kept unchanged) |
 | `src/` | Code for the 2D storyboard animatic |
 

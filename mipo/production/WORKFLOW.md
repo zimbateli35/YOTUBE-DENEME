@@ -63,7 +63,7 @@ first, approves them, and only then animates them.
 ## 4. Narration (natural boy voice)
 - **Fastest:** use **ElevenLabs Voice Design** to create a "young American boy, 6–7, warm, cheerful,
   calm, clear" voice. Name it *Mipo* and reuse the same Voice ID for every episode. Then run
-  `py tools\tts_elevenlabs.py production\episodes\<ep> --takes 3` (macOS: `python3 tools/tts_elevenlabs.py ...`). All ten lines, including the opening
+  `py tools\tts_elevenlabs.py tts production\episodes\<ep> --takes 3 --yes` (it's a dry run without `--yes`; see `AUDIO_AND_API_INTEGRATION.md` for credits, SFX and the 4-track mix). All ten lines, including the opening
   "Good morning! I'm Mipo!", are spoken by this one Mipo voice; there is no separate narrator.
 - **Most natural, long-term:** hire a voice actor who specializes in kid voices (usually an adult)
   through Voices.com, Voice123 or Fiverr. Send them `generated/NARRATION_SCRIPT.md`, which has the
