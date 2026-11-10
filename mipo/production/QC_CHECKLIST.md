@@ -14,7 +14,7 @@ Compare against `reference/cover_landscape_with_friends.png` (MASTER). If any bo
 - [ ] **Dark brown cargo pants** with flap pockets (**not** blue jeans)
 - [ ] Brown lace-up boots with cream soles
 - [ ] Brown backpack with straps on both shoulders and the **rolled mat with spiral end** on top
-- [ ] Wand: wooden handle, bronze band, **glowing gold star**, held in his **left** hand
+- [ ] Wand: wooden handle, bronze band, **glowing gold star**; on the **bedside table** in Scene 1, in his **left** hand from Scene 2 onward (viewer's right when he faces the camera)
 - [ ] Five fingers per hand, no melting or morphing during motion
 - [ ] Same face shape and features at the start, middle and end of every clip
 

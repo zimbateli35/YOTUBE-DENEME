@@ -16,6 +16,7 @@ Follow `SETUP.md` → "Windows 10/11, step by step", sections 1–4. At the end 
 - [ ] Merge the pull request on GitHub when you're happy, then `git checkout main` and `git pull`.
 
 ## 3. Test the tools before choosing services (free trials and free tiers only)
+Follow **`TEST_01_CHARACTER_LOCK_AND_SCENE1.md`** step by step. It covers the items below with exact files and pass criteria.
 - [ ] Use a free tier or trial of one reference-capable image tool. Attach
       `reference\cover_landscape_with_friends.png`, paste `prompts\00_character_sheet.txt`, and compare
       the result with `QC_CHECKLIST.md`. Try two or three tools and keep the one whose Mipo matches the

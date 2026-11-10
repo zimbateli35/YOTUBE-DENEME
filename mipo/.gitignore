@@ -5,3 +5,6 @@ __pycache__/
 # raw takes stay out of git (keep them in cloud storage)
 production/episodes/*/audio/voice/takes/
 production/episodes/*/clips/raw/
+# unapproved generation candidates
+reference/candidates/
+production/episodes/*/frames/candidates/

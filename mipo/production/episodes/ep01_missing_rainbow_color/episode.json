@@ -30,6 +30,7 @@
       "motion": "Mipo slowly opens his eyes, stretches both arms up with a cute yawn, hops out of bed onto the pink rug, looks up at the round window and gasps, pointing at the rainbow. Sunbeam dust sparkles drift. Gentle slow camera push-in, then ease out.",
       "end_frame": "Mipo standing on the pink rug in full outfit, surprised open mouth, pointing up at the window rainbow with the missing purple stripe.",
       "continuity": "Wand stays on the bedside table in this scene. Goggles on his head (also while in bed). Scarf, jacket and backpack are worn (storybook logic).",
+      "wand": "His star wand is NOT in his hands: it lies glowing on the wooden bedside table next to the bed.",
       "negative_extra": "pajamas, nightcap, purple stripe in rainbow"
     },
     {
@@ -50,6 +51,7 @@
       "motion": "The golden star wand floats out of the treehouse door and gently flies into Mipo's left hand with a sparkle trail. He raises the wand happily, its star glows. Tiny glowing golden and lilac sparkles appear one by one and form a winding trail from the porch toward the distant stone bridge. Mipo points at the trail with his other hand, excited smile. Slow push-in.",
       "end_frame": "Mipo holding the glowing wand up, pointing at a sparkle trail leading to the bridge.",
       "continuity": "From here on the wand is always in Mipo's LEFT hand (appears on the viewer's right when he faces the camera), exactly as in the banner; his right hand is free for pointing and waving. Scarf tail flows to his left (viewer's right).",
+      "wand": "At the start the wand is NOT in his hand yet; it floats out of the treehouse door and lands in his LEFT hand (viewer's right). From then on he holds it in his left hand.",
       "negative_extra": "purple stripe in rainbow, purple roofs, saturated purple"
     },
     {
@@ -70,6 +72,7 @@
       "motion": "Mipo walks cheerfully across the bridge following the floating sparkles. A friendly round blue bird flies in and flutters next to his shoulder. Mipo stops, smiles and gently talks to the bird; the bird chirps and nods. They continue together. Camera tracks sideways with soft parallax. Butterflies flutter, river sparkles.",
       "end_frame": "Mipo and the blue bird together in the middle of the bridge, both smiling, sparkles ahead.",
       "continuity": "Bird design is locked from here (round sky-blue, white face/belly, orange beak, head tuft).",
+      "wand": "He holds the golden star wand in his LEFT hand (viewer's right when he faces the camera).",
       "negative_extra": "purple stripe in rainbow, crowded frame, Mipo too small (keep him at least 35% of frame height)"
     },
     {
@@ -91,6 +94,7 @@
       "motion": "The white bunny hops in and the baby deer walks in; the deer stops behind and between Mipo and the flower, facing the flower, completely visible. The big pink flower slowly opens its petals to reveal a softly glowing purple magic droplet that bobs and sparkles. Everyone leans in and smiles with delight. Gentle push-in.",
       "end_frame": "All four friends around the open flower with the glowing purple droplet; deer fully visible between Mipo and the flower.",
       "continuity": "Deer position here must match scene 5's start (same spot).",
+      "wand": "He holds the golden star wand in his LEFT hand (viewer's right when he faces the camera).",
       "negative_extra": "deer hidden behind flower, deer cropped by frame edge, purple stripe in rainbow"
     },
     {
@@ -113,6 +117,7 @@
       "motion": "Mipo gently taps the purple droplet with his golden star wand. A soft magical flash, and the droplet turns into a swirl of purple sparkles that rise into the sky. Camera tilts up and pulls back as the sparkles paint the missing purple stripe back into the rainbow, and purple color spreads back across the valley: castle roofs, crystals and flowers. Everyone looks up in wonder.",
       "end_frame": "Wide shot: complete rainbow with a bright purple stripe, vivid valley, friends looking up joyfully.",
       "continuity": "Deer stays in the same spot as scene 4. Wand stays in the same hand.",
+      "wand": "He holds the golden star wand in his LEFT hand and taps the droplet with it.",
       "negative_extra": "deer hidden, deer cropped, explosion, fire, loud flash, scary"
     },
     {
@@ -131,6 +136,7 @@
       "motion": "The friends celebrate gently: the bunny hops, the deer bounces, the bird does a happy loop. Mipo looks directly into the camera, smiles and waves with his free hand while his wand sparkles. Soft confetti sparkles fall. Camera settles slowly. Leave the top quarter of the frame clear.",
       "end_frame": "Mipo waving at the viewer, friends around him, rainbow above, clean space at the top for text.",
       "continuity": "Final frame should be calm and readable for 1.5 s (end card).",
+      "wand": "He holds the golden star wand up in his LEFT hand and waves at the viewer with his RIGHT hand.",
       "negative_extra": "text, letters, logo, crowd, fast camera shake"
     }
   ],

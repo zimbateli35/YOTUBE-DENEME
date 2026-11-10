@@ -51,10 +51,8 @@ def main(ep_dir):
         with open(os.path.join(pdir, name), "w", encoding="utf-8") as f:
             f.write(text.strip() + "\n")
 
-    sheet = (f"Character turnaround model sheet of {ch['identity_lock']} "
-             f"Five poses on a plain light background: front, three-quarter left, side, back, "
-             f"three-quarter right, plus three facial expressions (happy, surprised, laughing). "
-             f"Same outfit in every pose. {ch['style_lock']}")
+    ta = ch["turnaround"]
+    sheet = ta["prompt"].format(identity_lock=ch["identity_lock"], style_lock=ch["style_lock"])
     write("00_character_sheet.txt", sheet)
     neg_all = ch["negative"]
     write("negative.txt", neg_all)
@@ -65,7 +63,8 @@ def main(ep_dir):
           f"**Format:** {fmt['width']}x{fmt['height']} ({fmt['aspect']}), {fmt['fps']} fps, {fmt['duration']:.0f} s  ",
           f"**Master character reference (attach to EVERY generation):** `{master}`  ",
           f"**Missing color rule:** {ep['missing_color_note']}", "",
-          "## Step 0 - Character sheet (generate once per series, approve, then reuse)", "",
+          f"## Step 0 - Character turnaround sheet ({ta['views']}; generate once per series, approve, then reuse)", "",
+          f"**Settings:** {ta['settings']}", "",
           "```text", sheet, "```", "",
           "## Global negative prompt", "", "```text", neg_all, "```", "",
           "## Friends (locked designs)", ""]
@@ -77,8 +76,8 @@ def main(ep_dir):
         n = sc["id"]
         dur = sc["end"] - sc["start"]
         img = (f"Vertical 9:16 frame. {sc['start_frame']} "
-               f"Character: {ch['identity_lock']} {ch['style_lock']}")
-        vid = (f"{sc['motion']} {ch['identity_short']} "
+               f"Character: {ch['identity_lock']} {sc['wand']} {ch['style_lock']}")
+        vid = (f"{sc['motion']} {ch['identity_short']} {sc['wand']} "
                f"Keep his face, hair, outfit, backpack and wand exactly the same throughout. "
                f"Smooth cinematic camera: {sc.get('camera_motion', sc['camera'])} Gentle, kid-safe, {dur:.1f} seconds, vertical 9:16.")
         neg = neg_all + ", " + sc.get("negative_extra", "")
@@ -96,6 +95,7 @@ def main(ep_dir):
             "```text", vid, "```", "",
             f"**End frame:** {sc['end_frame']}  ",
             f"**Continuity:** {sc['continuity']}  ",
+            f"**Wand:** {sc['wand']}  ",
             f"**Scene negative additions:** {sc.get('negative_extra', '-')}", ""]
         rows.append([n, sc["name"], sc["start"], sc["end"], dur, sc["location"], sc["camera"],
                      f"prompts/scene_{n:02d}_image.txt", f"prompts/scene_{n:02d}_video.txt",
