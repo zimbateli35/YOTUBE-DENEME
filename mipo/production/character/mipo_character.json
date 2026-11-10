@@ -40,7 +40,8 @@
   "friends": {
     "bird": "Blue Bird: small round sky-blue songbird, white face and belly, big brown eyes, small orange beak, little feather tuft on the head, soft blue wings.",
     "bunny": "White Bunny: fluffy pure-white baby rabbit, long ears with pink insides, big brown eyes, pink nose, chubby cheeks, sits upright.",
-    "deer": "Baby Deer: orange-tan fawn with white spots on the back, cream muzzle and chest, big brown eyes with lashes, large ears with pink insides, tiny two-point antlers, slim legs with dark hooves."
+    "deer": "Baby Deer: orange-tan fawn with white spots on the back, cream muzzle and chest, big brown eyes with lashes, large ears with pink insides, tiny two-point antlers, slim legs with dark hooves.",
+    "little_purple": "Little Purple: a tiny glowing purple paint droplet (about the size of Mipo's hand) with big sparkly dark eyes, a small smile and soft purple glow; floats in the air; no arms or legs."
   },
   "world": "Bright magical valley: a giant tree with a cozy treehouse and glowing lanterns, a pink-and-cream fairytale castle with purple cone roofs and red flags on a floating grassy island with a waterfall, an arched stone bridge with warm wooden railings over a sparkling blue river, rolling green hills, round trees, colorful daisies and cosmos, glowing purple crystals, butterflies, fluffy white clouds and a rainbow.",
   "turnaround": {

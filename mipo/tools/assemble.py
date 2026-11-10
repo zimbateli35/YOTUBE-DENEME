@@ -20,6 +20,7 @@ Never overwrites: final/<slug>[_sceneNN]_vN.mp4 gets a new version number each r
 import argparse
 import glob
 import os
+import re
 import subprocess
 import sys
 
@@ -35,6 +36,21 @@ DEFAULT_FONT_CANDIDATES = [
 ]
 
 
+def ffmpeg_major():
+    out = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True).stdout
+    m = re.search(r"ffmpeg version n?(\d+)", out)
+    return int(m.group(1)) if m else 7
+
+
+def graph_args(graph, folder):
+    """Pass the filter graph through a file: long episodes exceed Windows' command-line limit."""
+    os.makedirs(folder, exist_ok=True)
+    path = os.path.join(folder, "filter_graph.txt")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(graph)
+    return ["-/filter_complex", path] if ffmpeg_major() >= 7 else ["-filter_complex_script", path]
+
+
 def esc_path(p):
     return p.replace("\\", "/").replace(":", "\\:").replace("'", "\\'")
 
@@ -48,6 +64,7 @@ def main():
     ap.add_argument("--endcard", action="store_true", help="draw the end-card text from episode.json")
     ap.add_argument("--font", default=None, help="TTF/OTF for the end card")
     ap.add_argument("--music-db", type=float, default=-16.0, help="fallback mode: music level")
+    ap.add_argument("--preview", action="store_true", help="fast low-quality encode for draft checks")
     ap.add_argument("--allow-missing", action="store_true",
                     help="fill missing clips with a placeholder slate (timing tests)")
     args = ap.parse_args()
@@ -96,10 +113,13 @@ def main():
         srt = os.path.join(build, "subtitles.srt")
         if not os.path.exists(srt):
             srt = os.path.join(ep_dir, "generated", "subtitles.srt") if scope == "episode" else None
+        if srt and os.path.getsize(srt) < 10:
+            print("NOTE: subtitles file is empty (no approved voice lines yet); skipping captions")
+            srt = None
         if srt:
             post.append(f"subtitles='{esc_path(srt)}':force_style='Fontsize=13,Bold=1,Outline=2,MarginV=60'")
         else:
-            print("WARNING: no subtitles for this scene (run tools/mix_audio.py --scene N first)")
+            print("NOTE: no captions burned in (run tools/mix_audio.py first, after approving voice lines)")
     ec = ep.get("end_card")
     if args.endcard and ec and w0 <= ec["start"] < w0 + total:
         font = args.font or next((f for f in DEFAULT_FONT_CANDIDATES if os.path.exists(f)), None)
@@ -146,9 +166,10 @@ def main():
     while os.path.exists(out):
         n += 1
         out = os.path.join(ep_dir, "final", f"{stem}_v{n}.mp4")
-    cmd = ["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc),
+    cmd = ["ffmpeg", "-v", "error", "-y", *inputs, *graph_args(";".join(fc), build),
            "-map", f"[{vfinal}]", "-map", "[aout]", "-t", f"{total:.3f}",
-           "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(FPS),
+           "-c:v", "libx264", "-preset", "veryfast" if args.preview else "slow",
+           "-crf", "28" if args.preview else "17", "-pix_fmt", "yuv420p", "-r", str(FPS),
            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", out]
     subprocess.run(cmd, check=True)
     print("wrote", out)

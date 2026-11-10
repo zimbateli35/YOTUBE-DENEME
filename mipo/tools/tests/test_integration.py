@@ -59,7 +59,7 @@ class Pipeline(unittest.TestCase):
         cls.env = dict(os.environ,
                        ELEVENLABS_API_KEY=k["eleven"], ELEVENLABS_VOICE_MIPO="mock_mipo",
                        OPENAI_API_KEY=k["openai"], RUNWAYML_API_SECRET=k["runway"],
-                       ELEVENLABS_BASE_URL=cls.url, OPENAI_BASE_URL=cls.url, RUNWAY_BASE_URL=cls.url,
+                       ELEVENLABS_BASE_URL=cls.url, OPENAI_BASE_URL=cls.url, RUNWAYML_BASE_URL=cls.url,
                        NO_PROXY="127.0.0.1,localhost", no_proxy="127.0.0.1,localhost",
                        PYTHONIOENCODING="utf-8")
         for v in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy", "ALL_PROXY", "all_proxy"):

@@ -6,6 +6,8 @@ yet**, because that needs external services (see `SETUP.md`). Nothing in this fo
 
 | Document | What it is |
 |---|---|
+| [`SERIES_FORMAT.md`](SERIES_FORMAT.md) | **Series format**: long (10–12 min, 16:9) + Shorts, episode template, rules for ages 2–7, episode ideas, YouTube checklist |
+| [`episodes/ep01_long_missing_rainbow_color/PRODUCTION_PLAN.md`](episodes/ep01_long_missing_rainbow_color/PRODUCTION_PLAN.md) | **Episode 1 long edition (11:00)**: 69 shots, 84 lines, 75 SFX, chapters; story, volumes, order of work |
 | [`CHARACTER_LOCK.md`](CHARACTER_LOCK.md) | **Mandatory identity policy** (reference priority, visual DNA, hard constraints, production gate) |
 | [`TEST_01_CHARACTER_LOCK_AND_SCENE1.md`](TEST_01_CHARACTER_LOCK_AND_SCENE1.md) | **Current task:** front/side/back turnaround + Scene 1 start frame + 5 s animation test (free tiers only) |
 | [`AUDIO_AND_API_INTEGRATION.md`](AUDIO_AND_API_INTEGRATION.md) | ElevenLabs voices/SFX (pricing, credit safety), 4-track mix and sync, image/video API tools, first 5-second scene recipe, integration test |

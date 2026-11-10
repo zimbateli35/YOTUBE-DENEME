@@ -61,7 +61,7 @@ def remaining(sub):
 def print_sub(sub):
     left = remaining(sub)
     reset = sub.get("next_character_count_reset_unix")
-    when = datetime.datetime.utcfromtimestamp(reset).strftime("%Y-%m-%d") if reset else "?"
+    when = datetime.datetime.fromtimestamp(reset, datetime.timezone.utc).strftime("%Y-%m-%d") if reset else "?"
     print(f"Plan: {sub.get('tier', '?')}   status: {sub.get('status', '?')}")
     print(f"Credits used: {sub.get('character_count')} / {sub.get('character_limit')}   "
           f"left: {left}   resets: {when} (UTC)")
@@ -184,7 +184,7 @@ def cmd_tts(args):
                     "line": ln["id"], "speaker": ln.get("speaker"), "text": ln["text"],
                     "voice_id": vid, "model_id": model, "voice_settings": c["voice_settings"],
                     "seed": body["seed"], "alignment": res.get("alignment"),
-                    "created_utc": datetime.datetime.utcnow().isoformat(timespec="seconds")})
+                    "created_utc": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds")})
                 print(f"    wrote {os.path.relpath(path, ep_dir)}")
 
             jobs.append((f"{ln['id']} take {k + 1} [{ln.get('speaker')}] \"{ln['text']}\"", job))
@@ -223,7 +223,7 @@ def cmd_sfx(args):
                 with open(path, "wb") as f:
                     f.write(audio)
                 save_json(path[:-4] + ".json", {"cue": c["id"], "prompt": c["prompt"], "dur": c["dur"],
-                                                "created_utc": datetime.datetime.utcnow().isoformat(timespec="seconds")})
+                                                "created_utc": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds")})
                 print(f"    wrote {os.path.relpath(path, ep_dir)}")
             jobs.append((f"{c['id']} take {k + 1} @ {c['t']:.2f}s ({c['dur']}s): {c['prompt']}", job))
     est = args.est_per_request * len(jobs)

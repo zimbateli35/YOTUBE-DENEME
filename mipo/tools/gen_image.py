@@ -60,7 +60,8 @@ def generate(ep_dir, step, scene, args):
         refs.append(APPROVED_TURNAROUND)
         prompt = read_prompt(ep_dir, f"scene_{scene:02d}_image.txt")
         neg = read_prompt(ep_dir, f"scene_{scene:02d}_negative.txt")
-        size = "1024x1536"
+        fmt = load_json(os.path.join(ep_dir, "episode.json"))["format"]
+        size = "1024x1536" if fmt["height"] > fmt["width"] else "1536x1024"
         out_pat = os.path.join(ep_dir, "frames", "candidates", f"scene_{scene:02d}_start_cand{{n}}.png")
     full = (f"{prompt}\nUse the attached reference image(s) as the exact character design: same face, "
             f"hair, outfit, colors and proportions. Do NOT redesign him.\nAvoid: {neg}")
@@ -84,7 +85,7 @@ def generate(ep_dir, step, scene, args):
             f.write(base64.b64decode(item["b64_json"]))
         save_json(path[:-4] + ".json", {"step": step, "scene": scene, "model": model, "size": size,
                                         "references": [os.path.relpath(r, ROOT) for r in refs],
-                                        "created_utc": datetime.datetime.utcnow().isoformat(timespec="seconds")})
+                                        "created_utc": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds")})
         print("wrote", os.path.relpath(path, ROOT))
     print("Next: check against production/QC_CHECKLIST.md, then approve the best one.")
 

@@ -34,7 +34,24 @@ def srt_time(s):
 
 
 def mmss(s):
-    return f"0:{s:05.2f}"
+    m, sec = divmod(s, 60)
+    return f"{int(m)}:{sec:05.2f}"
+
+
+def chapter_time(s):
+    m, sec = divmod(int(s), 60)
+    return f"{m}:{sec:02d}"
+
+
+def friend_locks(ch, sc):
+    """Locked descriptions of every friend in frame (explicit list, or named in the frame text)."""
+    names = set(sc.get("friends", []))
+    text = (sc.get("start_frame", "") + " " + sc.get("motion", "")).lower()
+    for key, word in (("bird", "bird"), ("bunny", "bunny"), ("deer", "deer"), ("little_purple", "little purple")):
+        if word in text:
+            names.add(key)
+    return " ".join(ch["friends"][k] for k in ("bird", "bunny", "deer", "little_purple")
+                    if k in names and k in ch["friends"])
 
 
 def main(ep_dir):
@@ -71,15 +88,29 @@ def main(ep_dir):
     md += [f"- **{k.title()}:** {v}" for k, v in friends.items()]
     md += ["", "## World", "", ch["world"], ""]
 
-    rows = []
+    vertical = fmt["height"] > fmt["width"]
+    frame_word = f"{'Vertical' if vertical else 'Wide'} {fmt['aspect']} frame."
+    rows, too_long = [], []
     for sc in ep["scenes"]:
         n = sc["id"]
         dur = sc["end"] - sc["start"]
-        img = (f"Vertical 9:16 frame. {sc['start_frame']} "
-               f"Character: {ch['identity_lock']} {sc['wand']} {ch['style_lock']}")
-        vid = (f"{sc['motion']} {ch['identity_short']} {sc['wand']} "
-               f"Keep his face, hair, outfit, backpack and wand exactly the same throughout. "
-               f"Smooth cinematic camera: {sc.get('camera_motion', sc['camera'])} Gentle, kid-safe, {dur:.1f} seconds, vertical 9:16.")
+        mipo = sc.get("mipo_in_frame", True)
+        expr = f" Mipo's expression: {sc['expression']}." if mipo and sc.get("expression") else ""
+        fr = friend_locks(ch, sc)
+        if mipo:
+            img = (f"{frame_word} {sc['start_frame']}{expr} "
+                   f"Character: {ch['identity_lock']} {sc['wand']} "
+                   + (f"Friends (locked designs): {fr} " if fr else "") + ch["style_lock"])
+            vid = (f"{sc['motion']}{expr} {ch['identity_short']} {sc['wand']} "
+                   f"Keep his face, hair, outfit, backpack and wand exactly the same throughout. ")
+        else:
+            img = (f"{frame_word} {sc['start_frame']} "
+                   + (f"Characters (locked designs): {fr} " if fr else "") + ch["style_lock"])
+            vid = f"{sc['motion']} "
+        vid += (f"Smooth cinematic camera: {sc.get('camera_motion', sc['camera'])} "
+                f"Gentle, kid-safe, {dur:.0f} seconds, {'vertical' if vertical else 'widescreen'} {fmt['aspect']}.")
+        if len(vid) > 1000:
+            too_long.append(n)
         neg = neg_all + ", " + sc.get("negative_extra", "")
         write(f"scene_{n:02d}_image.txt", img)
         write(f"scene_{n:02d}_video.txt", vid)
@@ -97,14 +128,14 @@ def main(ep_dir):
             f"**Continuity:** {sc['continuity']}  ",
             f"**Wand:** {sc['wand']}  ",
             f"**Scene negative additions:** {sc.get('negative_extra', '-')}", ""]
-        rows.append([n, sc["name"], sc["start"], sc["end"], dur, sc["location"], sc["camera"],
+        rows.append([n, sc.get("sequence", ""), sc["name"], sc["start"], sc["end"], dur, sc["location"], sc["camera"],
                      f"prompts/scene_{n:02d}_image.txt", f"prompts/scene_{n:02d}_video.txt",
                      f"clips/scene_{n:02d}.mp4"])
     open(os.path.join(out, "PROMPTS.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
 
     with open(os.path.join(out, "shotlist.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["scene", "name", "start", "end", "duration", "location", "camera",
+        w.writerow(["scene", "sequence", "name", "start", "end", "duration", "location", "camera",
                     "image_prompt", "video_prompt", "approved_clip"])
         w.writerows(rows)
 
@@ -112,26 +143,43 @@ def main(ep_dir):
     nm = [f"# {ep['title']} - Narration script", "",
           f"**Voice:** {v['character']}. {v['description']}  ",
           f"**Consistency:** {v['consistency']}", "",
-          "Times are positions on the final 30.0 s timeline. `Must end` is the latest the line may finish "
-          "before it collides with the next beat. Record each line as its own file "
-          "(`L01.wav` ... `L10.wav`), 2-3 takes each, and keep the best take.", "",
-          "| ID | Start | Must end | Line | Delivery |", "|---|---|---|---|---|"]
+          f"Times are positions on the final {fmt['duration']:.1f} s timeline. `Must end` is the latest the line "
+          "may finish before it collides with the next line. Record each line as its own file "
+          f"(`{ep['narration'][0]['id']}.wav` ... `{ep['narration'][-1]['id']}.wav`), 2-3 takes each, and keep the best take.", ""]
+    if ep.get("learning_goals"):
+        nm += ["**Learning goals:** " + "; ".join(ep["learning_goals"]) + "  ",
+               f"**Emotional arc:** {ep.get('emotional_arc', '')}", ""]
+    nm += ["| ID | Start | Must end | Speaker | Line | Delivery |", "|---|---|---|---|---|---|"]
     for ln in ep["narration"]:
         extra = f" (alt: *{ln['alt']}*)" if ln.get("alt") else ""
         sync = f" **Sync: '{ln['sync_point']['word']}' at {ln['sync_point']['time']:.2f} s.**" if ln.get("sync_point") else ""
-        nm.append(f"| {ln['id']} | {ln['start']:.2f} | {ln['must_end']:.2f} | {ln['text']}{extra} | {ln['delivery']}.{sync} |")
+        nm.append(f"| {ln['id']} | {mmss(ln['start'])} | {mmss(ln['must_end'])} | {ln.get('speaker', 'mipo')} | "
+                  f"{ln['text']}{extra} | {ln['delivery']}.{sync} |")
     nm += ["", "## Plain script", ""]
-    nm += [f"[{mmss(ln['start'])}] {ln['text']}" for ln in ep["narration"]]
-    nm += ["", "## Sound effects cue sheet", "", "| Time | Cue |", "|---|---|"]
-    nm += [f"| {c['t']:.2f} | {c['cue']} |" for c in ep["sfx"]]
-    nm += ["", "## Music brief", "", ep["music"], ""]
+    nm += [f"[{mmss(ln['start'])}] {ln.get('speaker', 'mipo').upper()}: {ln['text']}" for ln in ep["narration"]]
+    nm += ["", "## Sound effects cue sheet", "", "| ID | Time | Cue |", "|---|---|---|"]
+    nm += [f"| {c.get('id', '')} | {mmss(c['t'])} | {c['cue']} |" for c in ep["sfx"]]
+    if ep.get("sequences"):
+        nm += ["", "## Music cues by sequence", "", "| Seq | Starts | Mood / emotion | Music |", "|---|---|---|---|"]
+        starts = {}
+        for sc in ep["scenes"]:
+            starts.setdefault(sc.get("sequence"), sc["start"])
+        nm += [f"| {q['id']} {q['title']} | {mmss(starts.get(q['id'], 0))} | {q.get('emotion', '')} | {q.get('music', '')} |"
+               for q in ep["sequences"]]
+    if ep.get("music"):
+        nm += ["", "## Music brief", "", ep["music"], ""]
     open(os.path.join(out, "NARRATION_SCRIPT.md"), "w", encoding="utf-8").write("\n".join(nm) + "\n")
     open(os.path.join(out, "narration_lines.txt"), "w", encoding="utf-8").write(
         "\n".join(f"{ln['id']}\t{ln['text']}" for ln in ep["narration"]) + "\n")
     srt = [f"{i}\n{srt_time(ln['start'])} --> {srt_time(ln['must_end'])}\n{ln['text']}\n"
            for i, ln in enumerate(ep["narration"], 1)]
     open(os.path.join(out, "subtitles.srt"), "w", encoding="utf-8").write("\n".join(srt))
+    if ep.get("chapters"):
+        with open(os.path.join(out, "YOUTUBE_CHAPTERS.txt"), "w", encoding="utf-8") as f:
+            f.write("\n".join(f"{chapter_time(c['t'])} {c['title']}" for c in ep["chapters"]) + "\n")
     print("wrote", out)
+    if too_long:
+        print(f"NOTE: video prompts over 1000 chars (Runway limit) for scenes {too_long}; shorten them.")
 
 
 if __name__ == "__main__":
