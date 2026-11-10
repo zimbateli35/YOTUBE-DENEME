@@ -706,6 +706,10 @@ def flower_head():
 
 
 TAP_POSE = dict(armR=(78, 4), wand_ang=118)
+# Baby deer staging for scenes 4-5: behind Mipo and the flower, facing the
+# flower, inside the tightest tap-shot crop (x 151-969) so it is fully visible.
+DEER_X, DEER_FY, DEER_S = 760, 1390, 0.9
+BIRD_DX, BIRD_DY = -190, -600   # bird hovers above the group, clear of the deer
 
 
 def big_flower(img, x, y, open_u, droplet=1.0, t=0.0, p=0.0):
@@ -740,8 +744,8 @@ def scene_meadow(t):
     ou = seg(t, T_FLOWER_OPEN, T_FLOWER_OPEN + 0.8)
     # deer (back), walks in from right
     du = seg(t, T_DEER_ARRIVE - 1.2, T_DEER_ARRIVE + 0.6)
-    dx = lerp(W + 220, 985, du)
-    draw_deer(img, dx * SS, 1560 * SS, 1.05 * SS, step=t * 8 if du < 1 else 0,
+    dx = lerp(W + 220, DEER_X, du)
+    draw_deer(img, dx * SS, DEER_FY * SS, DEER_S * SS, flip=True, step=t * 8 if du < 1 else 0,
               happy=t > T_FLOWER_OPEN + 0.6, nod=6 * math.sin(t * 3) if du >= 1 else 0)
     big_flower(img, fx, fy, ou, 1.0, t)
     # bunny hops in
@@ -751,7 +755,7 @@ def scene_meadow(t):
     draw_bunny(img, bx * SS, (1860 - hop) * SS, 1.05 * SS, happy=t > T_FLOWER_OPEN + 0.5,
                ear=8 * math.sin(t * 5))
     # bird already with Mipo, hovering above the flower
-    draw_bird(img, (fx + 80 + 20 * math.sin(t * 1.3)) * SS, (fy - 330 + 15 * math.sin(t * 4)) * SS,
+    draw_bird(img, (fx + BIRD_DX + 20 * math.sin(t * 1.3)) * SS, (fy + BIRD_DY + 15 * math.sin(t * 4)) * SS,
               1.05 * SS, flap=t * 16, happy=t > T_FLOWER_OPEN + 0.4)
     pose = dict(scarf=9 * math.sin(t * 2.5), eyes=blink(t, off=0.5), look=(0.9, 0.2),
                 mouth=talk_mouth(t, "open" if t > T_FLOWER_OPEN else "smile"),
@@ -778,13 +782,13 @@ def scene_tap(t):
     sweep = seg(t, T_RESTORE_START, T_RESTORE_END)
     rainbow(img, 540, 840, 500, 30, sweep=sweep, hint=1 - sweep, only_purple=True)
     X, FY, s, fx, fy = flower_head()
-    draw_deer(img, 985 * SS, 1560 * SS, 1.05 * SS, happy=t > T_TAP + 0.3,
+    draw_deer(img, DEER_X * SS, DEER_FY * SS, DEER_S * SS, flip=True, happy=t > T_TAP + 0.3,
               nod=-14 * seg(t, T_TAP + 0.6, T_TAP + 1.4))
     dropu = 1 - seg(t, T_TAP, T_TAP + 0.35)
     big_flower(img, fx, fy, 1.0, dropu, t)
     draw_bunny(img, 930 * SS, (1860 - (abs(math.sin(t * 6)) * 30 if t > T_TAP + 0.4 else 0)) * SS,
                1.05 * SS, happy=t > T_TAP + 0.3, ear=8 * math.sin(t * 5))
-    draw_bird(img, (fx + 80) * SS, (fy - 330 + 15 * math.sin(t * 4)) * SS, 1.05 * SS,
+    draw_bird(img, (fx + BIRD_DX) * SS, (fy + BIRD_DY + 15 * math.sin(t * 4)) * SS, 1.05 * SS,
               flap=t * 16, happy=t > T_TAP + 0.3)
     # tap animation
     if t < 21.2:

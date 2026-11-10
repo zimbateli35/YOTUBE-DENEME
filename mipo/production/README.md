@@ -1,0 +1,28 @@
+# Mipo's Magical World: 3D production package
+
+**Status:** pre-production is ready; the premium 3D clips and the natural voice **have not been generated
+yet**, because that needs external services (see `SETUP.md`). Nothing in this folder is an AI-generated
+3D or neural-voice file.
+
+| Document | What it is |
+|---|---|
+| [`WORKFLOW.md`](WORKFLOW.md) | The step-by-step pipeline: character lock → start frames → image-to-video → voice → music → assemble → QC → publish |
+| [`SETUP.md`](SETUP.md) | Software, accounts and API keys to set up on your computer |
+| [`QC_CHECKLIST.md`](QC_CHECKLIST.md) | Character-fidelity and technical release gate |
+| [`character/mipo_character.json`](character/mipo_character.json) | Locked character definition (identity prompt, negative prompt, friends, world) |
+| [`episodes/ep01_missing_rainbow_color/episode.json`](episodes/ep01_missing_rainbow_color/episode.json) | Episode 1 spec: six scenes, staging, beats, narration timestamps, SFX cues, music brief |
+| [`episodes/ep01_missing_rainbow_color/generated/PROMPTS.md`](episodes/ep01_missing_rainbow_color/generated/PROMPTS.md) | **Six-scene 3D prompt package** (start-frame and motion prompts, ready to paste) |
+| [`episodes/ep01_missing_rainbow_color/generated/NARRATION_SCRIPT.md`](episodes/ep01_missing_rainbow_color/generated/NARRATION_SCRIPT.md) | **Timed English narration script** with delivery notes, SFX cue sheet and music brief |
+| `episodes/ep01_.../generated/subtitles.srt` | English captions for YouTube |
+| `episodes/ep01_.../generated/prompts/*.txt` | One file per prompt, for copy and paste |
+| `episodes/ep01_.../generated/shotlist.csv` | Shot list for tracking takes |
+
+Tools (in `../tools/`):
+- `build_package.py`: regenerates everything in `generated/` from the JSON files
+- `tts_elevenlabs.py`: generates the narration takes through the ElevenLabs API
+- `assemble.py`: turns the approved clips, voice and music into the final 1080×1920 MP4
+
+## Rules
+1. The **banner** (`../reference/cover_landscape_with_friends.png`) is the only authority on how Mipo looks.
+2. Edit the JSON files, never `generated/`, and re-run `build_package.py`.
+3. Never overwrite a delivered MP4: `assemble.py` writes a new version number each time.

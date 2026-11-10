@@ -25,10 +25,10 @@ MIPO = {
     "jacket": "#f2e7d1", "jacket_sh": "#dccbab", "cuff": "#6e4a30",
     "shirt": "#4a2c22", "star": "#ffd23a", "star_edge": "#f0961c",
     "belt": "#6e4424", "buckle": "#e0b24a",
-    # Blue jeans per the written brief. The banner art shows dark brown
-    # cargo pants; to switch, set jeans="#5a4636", jeans_sh="#45352a",
-    # jeans_cuff="#6e5a48".
-    "jeans": "#4a78bf", "jeans_sh": "#36609f", "jeans_cuff": "#6c95d2",
+    # Pants follow the channel banner (authoritative): dark brown cargo pants.
+    # (The v1 preview MP4 was rendered with blue jeans "#4a78bf" before the
+    # banner was declared the single source of truth.)
+    "jeans": "#5a4636", "jeans_sh": "#45352a", "jeans_cuff": "#6e5a48",
     "boot": "#9c5c2c", "boot_dark": "#74421f", "sole": "#ead6aa", "lace": "#f0d39a",
     "pack": "#9a6232", "pack_dark": "#76461f", "bedroll": "#cf9049", "bedroll_dark": "#9e6630",
     "wand": "#6b3e1f", "wand_band": "#d9a548",

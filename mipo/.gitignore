@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+# raw takes stay out of git (keep them in cloud storage)
+production/episodes/*/audio/voice/takes/
+production/episodes/*/clips/raw/
