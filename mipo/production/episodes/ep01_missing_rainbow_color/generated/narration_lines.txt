@@ -1,0 +1,10 @@
+L01	Good morning! I'm Mipo!
+L02	Oh no! A rainbow color is missing!
+L03	Where did the purple go?
+L04	Let's find it!
+L05	Follow those magical sparkles!
+L06	Look! Our friends found the missing color!
+L07	One little tap...
+L08	...and MAGIC!
+L09	Hooray! We did it!
+L10	See you next magic moment!

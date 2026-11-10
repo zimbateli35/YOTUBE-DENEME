@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:01,900
+Good morning! I'm Mipo!
+
+2
+00:00:02,250 --> 00:00:04,800
+Oh no! A rainbow color is missing!
+
+3
+00:00:05,400 --> 00:00:07,300
+Where did the purple go?
+
+4
+00:00:07,600 --> 00:00:09,200
+Let's find it!
+
+5
+00:00:10,500 --> 00:00:13,200
+Follow those magical sparkles!
+
+6
+00:00:15,500 --> 00:00:18,800
+Look! Our friends found the missing color!
+
+7
+00:00:20,400 --> 00:00:21,700
+One little tap...
+
+8
+00:00:21,750 --> 00:00:23,000
+...and MAGIC!
+
+9
+00:00:25,300 --> 00:00:26,900
+Hooray! We did it!
+
+10
+00:00:27,200 --> 00:00:29,400
+See you next magic moment!

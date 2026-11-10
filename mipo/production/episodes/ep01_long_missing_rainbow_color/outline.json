@@ -1,0 +1,2401 @@
+{
+ "episode": 1,
+ "edition": "long",
+ "slug": "ep01_long_missing_rainbow_color",
+ "title": "Mipo and the Missing Rainbow Color",
+ "audience": "Children 2-7 (works up to ~9). English narration, simple words, calm pace, interactive pauses.",
+ "format": {
+  "width": 1920,
+  "height": 1080,
+  "aspect": "16:9",
+  "fps": 30
+ },
+ "missing_color_note": "The missing color is PURPLE. It appears nowhere on Mipo. Until the wand tap in 'The tap: MAGIC!' the rainbow has no purple stripe, purple things (castle roofs, crystals, purple flowers) are soft grey and the world is slightly muted. Afterwards purple is restored everywhere.",
+ "storyboard_reference": "None yet (the 30 s Shorts animatic covers the core beats).",
+ "learning_goals": [
+  "Rainbow colors: red, orange, yellow, green, blue, purple",
+  "Counting to 5 and to 6; countdown 3-2-1",
+  "Naming feelings: sad, scared, brave, happy",
+  "Calm-down breathing",
+  "Asking for help, helping others, taking turns",
+  "Everyone is important; kindness"
+ ],
+ "emotional_arc": "sad -> calmer -> hopeful -> brave -> caring -> brave together -> kind -> joyful",
+ "voice": {
+  "character": "narrator (gentle storyteller) + Mipo + Blue Bird + Bunny + Baby Deer + Little Purple",
+  "description": "Narrator: warm, friendly storyteller. Mipo: warm, cheerful young boy (6-7). Friends: small, sweet, distinct. Clear American English, calm pace with pauses for kids to answer.",
+  "consistency": "Each character always uses the same ElevenLabs voice (production/voices.json). Never change a character's voice between episodes."
+ },
+ "end_card": {
+  "shot": "Goodbye wave",
+  "offset": 1.0,
+  "text": [
+   "See you next",
+   "magic moment!"
+  ],
+  "subtitle": "Mipo's Magical World",
+  "note": "Draw in the editor; the last 20 s also leave room for YouTube end-screen elements."
+ },
+ "audio_mix": {
+  "music_gain_db": -18,
+  "target_lufs": -14,
+  "true_peak_db": -1.5,
+  "tracks": [
+   "narration",
+   "dialogue",
+   "music",
+   "sfx"
+  ]
+ },
+ "sequences": [
+  {
+   "id": "A",
+   "chapter": "Hi, friends!",
+   "title": "Cold open: the rainbow has a gap",
+   "emotion": "curious, inviting",
+   "learning": "Hook: there is a problem to solve together",
+   "music": "Bright music-box sting, then soft curious pad",
+   "location": "Rainbow Hill above the magical valley",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Valley flyover to Mipo",
+     "camera": "Slow aerial glide over the colorful valley down to Mipo on a grassy hill.",
+     "start_frame": "Wide 3D view of a bright magical valley at morning: giant tree with a cozy treehouse and glowing lanterns, floating island castle with soft grey cone roofs and a waterfall, stone arch bridge over a sparkling river, a rainbow with red, orange, yellow, green and blue stripes and an empty gap where the purple stripe should be. Mipo stands small on a grassy hill, waving.",
+     "motion": "Camera glides down over the valley to Mipo, who waves happily at the viewer, then looks up at the rainbow and tilts his head.",
+     "end_frame": "Medium shot of Mipo waving at camera under the rainbow with the empty purple gap.",
+     "lines": [
+      [
+       1.2,
+       "mipo",
+       "Hi, friends! I'm Mipo!",
+       "bright, warm, waving hello"
+      ],
+      [
+       5.0,
+       "mipo",
+       "Look at my rainbow... Uh-oh!",
+       "proud, then gentle surprise"
+      ]
+     ],
+     "sfx": [
+      [
+       0.1,
+       1.5,
+       -6,
+       "soft magical sparkle chime, gentle twinkles, children's cartoon, no voice"
+      ],
+      [
+       4.8,
+       1.2,
+       -9,
+       "gentle curious two-note music box 'uh-oh', soft, not sad"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy, then surprised",
+     "friends": [],
+     "mipo": true,
+     "camera_motion": "slow aerial glide down to Mipo"
+    },
+    {
+     "dur": 10,
+     "name": "Will you help me?",
+     "camera": "Medium close-up, Mipo talks to camera; gentle push-in.",
+     "start_frame": "Mipo on the hill pointing up at the gap in the rainbow, looking at the viewer with hopeful eyes, star wand glowing in his left hand.",
+     "motion": "Mipo points at the missing stripe, then turns to the camera with a hopeful smile and holds out his right hand as if inviting the viewer along. Sparkles drift.",
+     "end_frame": "Mipo smiling at camera, hand held out, sparkles around him.",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "One color is missing! Will you help me find it?",
+       "hopeful, inviting, a tiny pause before 'find it'"
+      ],
+      [
+       6.0,
+       "mipo",
+       "Yay! Let's go!",
+       "joyful, energetic but not shouting"
+      ]
+     ],
+     "sfx": [
+      [
+       6.0,
+       1.0,
+       -8,
+       "happy little cartoon whoosh with sparkles"
+      ]
+     ],
+     "wand": "left",
+     "expression": "hopeful, then excited",
+     "friends": [],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "chapter": "Theme song",
+   "title": "Theme song montage",
+   "emotion": "joyful",
+   "learning": "Series identity",
+   "music": "THEME SONG (original): 'Mipo, Mipo, wave your wand, / colors shining all day long! / Friends and fun and magic too, / Mipo's world is here for you!' Upbeat, 112 BPM, ukulele + glockenspiel + claps; end on a sparkle.",
+   "location": "Montage around the magical valley",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Theme: running with friends",
+     "camera": "Tracking shot alongside Mipo running through flowers.",
+     "start_frame": "Mipo runs happily through a colorful flower meadow with the blue bird flying beside him, the white bunny hopping and the baby deer trotting, all smiling.",
+     "motion": "Joyful slow-motion run through the flowers, petals and sparkles float up, friends play around Mipo.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.0,
+       2.0,
+       -12,
+       "light whoosh of running through grass with sparkles"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Theme: wand sparkle spin",
+     "camera": "Low-angle hero shot, slow orbit around Mipo.",
+     "start_frame": "Mipo on a mossy rock under a bright sky spins his glowing star wand; a ribbon of golden sparkles swirls around him.",
+     "motion": "Mipo twirls the wand in a circle and a sparkle ribbon spirals into the sky and bursts softly into tiny stars.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       2.0,
+       2.0,
+       -8,
+       "magical rising sparkle swirl, gentle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "excited",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "Theme: logo moment",
+     "camera": "Static wide sky shot with space in the center for the logo (added in the editor).",
+     "start_frame": "Bright blue sky with fluffy clouds and floating golden sparkles, clean empty center area for a title logo, no text.",
+     "motion": "Sparkles twinkle and clouds drift slowly; a soft burst of light in the center.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.2,
+       1.5,
+       -6,
+       "bright magical logo sting chime"
+      ]
+     ],
+     "wand": "none",
+     "expression": "",
+     "friends": [],
+     "mipo": false,
+     "negative_extra": "text, letters, logo, watermark"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "chapter": "Mipo feels sad",
+   "title": "Morning: the missing purple",
+   "emotion": "sleepy -> surprised -> sad -> calmer",
+   "learning": "Naming feelings; it's okay to feel sad; belly breathing",
+   "music": "Soft, slow celesta and warm strings; gentle minor color while Mipo is sad (never scary); calm breathing pad",
+   "location": "Cozy pastel treehouse bedroom, then the treehouse porch",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Wake up",
+     "camera": "Slow push-in on the bed.",
+     "start_frame": "Cozy pastel treehouse bedroom at sunrise, warm wooden walls, glowing lantern, round window. Mipo sits up in a small wooden bed under a teal star blanket, eyes closed, sleepy. His star wand lies glowing on the bedside table.",
+     "motion": "Golden sunbeams with dust sparkles move across Mipo; he slowly opens his eyes and blinks sleepily.",
+     "end_frame": "Mipo awake, sleepy smile, sunbeam on his face.",
+     "lines": [
+      [
+       1.0,
+       "narrator",
+       "Good morning, Mipo! The sun is up, and the birds are singing.",
+       "warm storyteller, gentle and smiling"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "distant cheerful morning songbirds outside a window, calm"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "sleepy",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "Big stretch",
+     "camera": "Medium shot.",
+     "start_frame": "Mipo sitting up in bed, arms starting to rise, sunbeams, wand glowing on the bedside table.",
+     "motion": "Mipo stretches both arms up high with a big cute yawn, then smiles.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.8,
+       "mipo",
+       "Good morning, sunshine!",
+       "sleepy-happy, soft"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       1.0,
+       -10,
+       "cute soft cartoon yawn-stretch whoosh"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "yawning, then happy",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "The window: purple is gone",
+     "camera": "Over-the-shoulder shot from behind Mipo to the round window, then reverse close-up of his face.",
+     "start_frame": "Mipo kneels at the big round window looking out at the rainbow, which has no purple stripe; the purple flowers below are grey.",
+     "motion": "Mipo's happy face slowly changes to surprise as he notices the gap; he presses his hands to the window glass.",
+     "end_frame": "Close-up of Mipo surprised, mouth in a small 'o'.",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Oh no... where is the purple?",
+       "gentle surprise, worried but soft"
+      ],
+      [
+       4.4,
+       "narrator",
+       "The purple stripe is gone. And look... the purple flowers are grey.",
+       "soft, noticing"
+      ]
+     ],
+     "sfx": [
+      [
+       1.0,
+       1.5,
+       -9,
+       "gentle descending three-note music box, curious not scary"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "surprised",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Sad on the porch",
+     "camera": "Wide, then slow push to medium.",
+     "start_frame": "Treehouse porch with wooden railing overlooking the slightly muted valley. Mipo sits on the top step, chin in his hands, looking down; a grey flower in a pot beside him.",
+     "motion": "Mipo sighs and his shoulders drop; a leaf drifts past. Calm, soft lighting, nothing scary.",
+     "end_frame": "Mipo looking sad, small and gentle.",
+     "lines": [
+      [
+       1.5,
+       "narrator",
+       "Mipo feels sad. That's okay. Everybody feels sad sometimes.",
+       "very warm and reassuring, slow"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       2.0,
+       -16,
+       "soft gentle breeze through leaves"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "sad",
+     "friends": [],
+     "mipo": true,
+     "camera_motion": "slow push-in"
+    },
+    {
+     "dur": 10,
+     "name": "Belly breathing",
+     "camera": "Medium shot facing Mipo, calm and still.",
+     "start_frame": "Mipo sitting on the porch step, eyes closed, one hand on his tummy, soft morning light.",
+     "motion": "Mipo breathes in slowly (shoulders rise, cheeks puff a little), then breathes out slowly; repeats once. Tiny sparkles drift on the breath.",
+     "end_frame": "Mipo calmer, a small smile appearing.",
+     "lines": [
+      [
+       0.2,
+       "narrator",
+       "Let's take a big breath with Mipo. Smell the flower...",
+       "slow, calm, inviting; pause after 'flower'"
+      ],
+      [
+       6.0,
+       "narrator",
+       "...and blow out the candle. One more time!",
+       "slow, calm, playful at the end"
+      ]
+     ],
+     "sfx": [
+      [
+       1.5,
+       2.5,
+       -14,
+       "soft airy breathing-in shimmer"
+      ],
+      [
+       5.5,
+       2.5,
+       -14,
+       "soft airy breathing-out shimmer"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "calm",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "A little better",
+     "camera": "Close-up.",
+     "start_frame": "Close-up of Mipo on the porch opening his eyes with a small brave smile.",
+     "motion": "Mipo opens his eyes and smiles a little; the light gets warmer.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "mipo",
+       "I feel a little better now.",
+       "soft, honest, small smile"
+      ]
+     ],
+     "sfx": [],
+     "wand": "bedside",
+     "expression": "small smile",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Blue Bird comforts Mipo",
+     "camera": "Two-shot, Mipo and the bird on the railing.",
+     "start_frame": "The round blue bird lands on the porch railing next to Mipo, chirping softly; Mipo looks up at it.",
+     "motion": "The bird hops closer and gently pats Mipo's shoulder with its wing; Mipo smiles more.",
+     "end_frame": "Mipo and the bird smiling at each other.",
+     "lines": [
+      [
+       0.6,
+       "mipo",
+       "Hello, Blue Bird. The rainbow lost its purple.",
+       "a bit sad but friendly"
+      ],
+      [
+       5.3,
+       "bird",
+       "Tweet! Don't worry, Mipo. We can find it together!",
+       "tiny, bright, sing-song, cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       1.5,
+       -9,
+       "soft bird wing flutter landing and a happy little tweet"
+      ]
+     ],
+     "wand": "bedside",
+     "expression": "smiling",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "chapter": "The magic wand",
+   "title": "The wand shows the way",
+   "emotion": "hopeful -> brave",
+   "learning": "Courage: trying even when it's hard",
+   "music": "Rising, hopeful theme; music box + light strings, gentle build",
+   "location": "Treehouse porch and path down into the valley",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "The wand glows and flies",
+     "camera": "Inside-to-outside move: from the bedside table through the window to the porch.",
+     "start_frame": "Inside the bedroom, the star wand on the bedside table starts to glow brightly; through the window Mipo is visible on the porch.",
+     "motion": "The wand lifts up, floats out of the window with a sparkle trail and lands gently in Mipo's LEFT hand on the porch.",
+     "end_frame": "Mipo holding the glowing wand, amazed.",
+     "lines": [
+      [
+       1.0,
+       "narrator",
+       "Look! Mipo's magic wand is glowing!",
+       "excited whisper, wonder"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       1.5,
+       -8,
+       "magical shimmering hum of a glowing wand"
+      ],
+      [
+       3.0,
+       2.0,
+       -8,
+       "light magical whoosh with sparkles as a wand flies"
+      ]
+     ],
+     "wand": "flying",
+     "expression": "amazed",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "A sparkle trail",
+     "camera": "Medium shot, then pan to the trail leading into the valley.",
+     "start_frame": "Mipo raises the glowing wand; tiny golden and lilac sparkles appear in the air in front of the porch.",
+     "motion": "The sparkles line up into a twinkling trail that winds down the treehouse path toward a red garden in the valley.",
+     "end_frame": "The sparkle trail leading into the valley.",
+     "lines": [
+      [
+       1.0,
+       "mipo",
+       "A sparkle trail! It will show us the way!",
+       "excited, bright"
+      ]
+     ],
+     "sfx": [
+      [
+       1.5,
+       3.0,
+       -10,
+       "series of tiny twinkling sparkle sounds appearing one by one"
+      ]
+     ],
+     "wand": "left",
+     "expression": "excited",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "I'll bring it back",
+     "camera": "Low-angle hero shot.",
+     "start_frame": "Mipo tightens his backpack straps on the porch, the wand in his left hand, red scarf fluttering, the rainbow with the gap behind him.",
+     "motion": "Mipo nods with determination, looks up at the rainbow and smiles bravely.",
+     "end_frame": "Heroic, brave pose.",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Don't worry, rainbow. I'll bring your purple back!",
+       "brave, warm, determined"
+      ],
+      [
+       6.0,
+       "narrator",
+       "Mipo feels brave now.",
+       "proud, gentle"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "determined",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Down the treehouse path",
+     "camera": "Tracking shot following Mipo and the bird down a winding wooden path.",
+     "start_frame": "Mipo walks down the wooden stairs of the treehouse path following the sparkle trail; the blue bird flies beside him.",
+     "motion": "Mipo skips down the steps, the bird loops happily, the sparkles twinkle ahead.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "Are you ready, friends? Let's follow the sparkles!",
+       "inviting, playful"
+      ],
+      [
+       6.0,
+       "mipo",
+       "Let's go!",
+       "cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       1.0,
+       3.0,
+       -14,
+       "light child footsteps on wooden steps, cheerful"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Through the valley",
+     "camera": "Wide travel shot.",
+     "start_frame": "Wide shot of the slightly muted valley: Mipo and the blue bird walking along a flower path toward a garden full of red, the sparkle trail ahead; some flowers are soft grey.",
+     "motion": "Mipo and the bird travel along the path; the sparkle trail glides ahead.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -16,
+       "gentle nature ambience with soft birdsong"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "chapter": "Red: the strawberry garden",
+   "title": "Red Strawberry Garden",
+   "emotion": "playful, helpful",
+   "learning": "Color RED; counting 1-5; making a new friend",
+   "music": "Bouncy pizzicato strings and marimba, playful",
+   "location": "Red Strawberry Garden",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Welcome to the red garden",
+     "camera": "Wide establishing shot, slow push.",
+     "start_frame": "A cheerful garden where everything is red: giant shiny strawberries, red tulips, red poppies, a little red watering can. Mipo and the blue bird arrive at the gate.",
+     "motion": "Mipo looks around with wonder; a red ladybug flies past.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "narrator",
+       "Welcome to the Red Strawberry Garden! Everything here is... red!",
+       "bright, playful emphasis on 'red'"
+      ],
+      [
+       6.8,
+       "mipo",
+       "Can you say red? ...Red!",
+       "inviting the viewer, pause for kids, then cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       1.5,
+       -9,
+       "playful marimba sparkle welcome sting"
+      ]
+     ],
+     "wand": "left",
+     "expression": "wonder",
+     "friends": [
+      "bird"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Bunny peeks out",
+     "camera": "Medium shot of a strawberry patch.",
+     "start_frame": "The fluffy white bunny peeks out from behind big green strawberry leaves, holding a red strawberry, cheeks full.",
+     "motion": "The bunny pops up, wiggles its nose and waves shyly at Mipo; Mipo waves back.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "bunny",
+       "Hi, Mipo! Do you want to help me pick strawberries?",
+       "soft, shy, sweet"
+      ],
+      [
+       6.4,
+       "mipo",
+       "Yes, please!",
+       "happy, polite"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       0.8,
+       -9,
+       "soft cute cartoon pop as the bunny appears"
+      ]
+     ],
+     "wand": "left",
+     "expression": "delighted",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Counting strawberries",
+     "camera": "Top-down then side shot of a little basket.",
+     "start_frame": "Mipo and the bunny kneel by a small wicker basket in the strawberry patch.",
+     "motion": "One by one they place five big red strawberries into the basket; each one lands with a tiny bounce and sparkle.",
+     "end_frame": "Five strawberries in the basket.",
+     "lines": [
+      [
+       0.3,
+       "narrator",
+       "Let's count them together! One... two... three... four... five!",
+       "slow counting, one number per second, joyful"
+      ]
+     ],
+     "sfx": [
+      [
+       1.5,
+       0.4,
+       -10,
+       "tiny soft pop"
+      ],
+      [
+       2.6,
+       0.4,
+       -10,
+       "tiny soft pop"
+      ],
+      [
+       3.7,
+       0.4,
+       -10,
+       "tiny soft pop"
+      ],
+      [
+       4.8,
+       0.4,
+       -10,
+       "tiny soft pop"
+      ],
+      [
+       5.9,
+       0.6,
+       -8,
+       "tiny soft pop with sparkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "concentrating, happy",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Asking about purple",
+     "camera": "Two-shot.",
+     "start_frame": "Mipo and the bunny sitting by the full basket, the bunny holding a strawberry happily.",
+     "motion": "The bunny says thank you and nibbles; Mipo asks his question with a kind, hopeful face.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "bunny",
+       "Five yummy strawberries! Thank you, Mipo.",
+       "happy, sweet"
+      ],
+      [
+       4.5,
+       "mipo",
+       "Bunny, have you seen the purple from the rainbow?",
+       "kind, hopeful"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "hopeful",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "The bunny remembers",
+     "camera": "Close-up on the bunny, then whip-pan to a distant orange hill.",
+     "start_frame": "The bunny taps its chin, thinking; behind them, far away, an orange hill full of pumpkins.",
+     "motion": "The bunny's ears perk up and it points toward the orange hill.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "bunny",
+       "Hmm... I saw purple sparkles hopping over Pumpkin Hill!",
+       "thinking, then excited"
+      ]
+     ],
+     "sfx": [
+      [
+       4.0,
+       0.8,
+       -10,
+       "soft 'aha' bell ding"
+      ]
+     ],
+     "wand": "left",
+     "expression": "curious",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "A new friend joins",
+     "camera": "Medium shot, gentle push.",
+     "start_frame": "Mipo holds out his right hand to the bunny; the blue bird hovers above.",
+     "motion": "The bunny hops happily into place next to Mipo; all three cheer softly.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "mipo",
+       "Will you come with us?",
+       "kind, inviting"
+      ],
+      [
+       3.2,
+       "bunny",
+       "Hop, hop... yes!",
+       "giggly, sweet"
+      ],
+      [
+       6.0,
+       "narrator",
+       "Now Mipo has two friends. Friends make adventures more fun!",
+       "warm, smiling"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Off to Pumpkin Hill",
+     "camera": "Wide travel shot.",
+     "start_frame": "Mipo, the bunny and the bird walk out of the red garden along a path toward an orange hill, sparkle trail ahead.",
+     "motion": "They walk and hop together; the bunny bounces playfully.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "playful hopping and footsteps on a dirt path"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "chapter": "Orange: Pumpkin Hill",
+   "title": "Orange Pumpkin Hill",
+   "emotion": "caring",
+   "learning": "Color ORANGE; helping a friend who falls",
+   "music": "Warm bassoon + pizzicato, gently comic",
+   "location": "Orange Pumpkin Hill",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Pumpkin Hill",
+     "camera": "Wide establishing shot.",
+     "start_frame": "A sunny hill covered in round orange pumpkins, orange autumn leaves and orange flowers; Mipo, the bunny and the bird at the bottom.",
+     "motion": "Orange leaves twirl in a gentle breeze; Mipo looks up the hill.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "narrator",
+       "This is Pumpkin Hill. What color are the pumpkins?",
+       "curious, inviting; pause after"
+      ],
+      [
+       6.0,
+       "mipo",
+       "Orange!",
+       "proud, cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       3.0,
+       -16,
+       "soft rustling autumn leaves in a gentle breeze"
+      ]
+     ],
+     "wand": "left",
+     "expression": "curious",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Bunny slips",
+     "camera": "Medium shot on a gentle slope.",
+     "start_frame": "Mipo and the bunny climbing a gentle grassy slope between pumpkins.",
+     "motion": "The bunny's paw slips on a leaf and it slides down softly and sits, a little sad (no injury). Mipo turns around with concern.",
+     "end_frame": "Bunny sitting, a little sad; Mipo coming to help.",
+     "lines": [
+      [
+       4.5,
+       "mipo",
+       "Are you okay, Bunny? Take my hand.",
+       "caring, gentle"
+      ]
+     ],
+     "sfx": [
+      [
+       1.0,
+       1.2,
+       -9,
+       "soft cartoon slide whoop on grass, gentle and funny, not scary"
+      ]
+     ],
+     "wand": "left",
+     "expression": "concerned",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Helping hand",
+     "camera": "Close two-shot.",
+     "start_frame": "Mipo reaches out his right hand to the sitting bunny.",
+     "motion": "The bunny takes Mipo's hand and stands up, smiling again; they hug briefly.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "bunny",
+       "Thank you, Mipo! You are a good friend.",
+       "grateful, sweet"
+      ],
+      [
+       5.4,
+       "narrator",
+       "Helping a friend feels warm and happy inside.",
+       "warm, slow"
+      ]
+     ],
+     "sfx": [
+      [
+       5.0,
+       1.5,
+       -12,
+       "warm soft harp shimmer"
+      ]
+     ],
+     "wand": "left",
+     "expression": "kind",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Roll, pumpkin, roll!",
+     "camera": "Wide side shot of the slope.",
+     "start_frame": "A small round pumpkin at the top of a gentle grassy slope; Mipo and the bunny watch.",
+     "motion": "The little pumpkin rolls slowly down the slope with a happy bounce and stops in a pile of soft leaves; everyone laughs.",
+     "end_frame": "Mipo and bunny laughing.",
+     "lines": [
+      [
+       1.5,
+       "mipo",
+       "Whoa! Roll, pumpkin, roll!",
+       "laughing, playful"
+      ]
+     ],
+     "sfx": [
+      [
+       1.0,
+       3.0,
+       -10,
+       "gentle cartoon rolling pumpkin with soft boing at the end"
+      ],
+      [
+       5.0,
+       2.0,
+       -12,
+       "soft children's giggle-like bell sparkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "laughing",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "A purple sparkle!",
+     "camera": "Close-up on a leaf, then rack focus to Mipo.",
+     "start_frame": "At the top of the hill a single tiny purple sparkle rests on an orange leaf; Mipo leans close to look.",
+     "motion": "The purple sparkle lifts off and floats away toward a field of tall yellow sunflowers; Mipo points.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "mipo",
+       "Look! A purple sparkle! It went that way!",
+       "excited, pointing"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       2.5,
+       -8,
+       "delicate high purple twinkle floating away"
+      ]
+     ],
+     "wand": "left",
+     "expression": "excited",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Down to the sunflowers",
+     "camera": "Tracking shot.",
+     "start_frame": "Mipo, the bunny and the bird walk happily down the far side of the hill toward a field of giant sunflowers.",
+     "motion": "They walk down together; the sparkle trail glows ahead.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "light footsteps and hops on grass"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "chapter": "Yellow: the sunflower meadow",
+   "title": "Yellow Sunflower Meadow",
+   "emotion": "curious, cooperative",
+   "learning": "Color YELLOW; asking for help; taking turns",
+   "music": "Sunny ukulele + glockenspiel, light and bouncy",
+   "location": "Yellow Sunflower Meadow",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Yellow like the sun",
+     "camera": "Wide establishing shot.",
+     "start_frame": "A meadow of tall bright yellow sunflowers and yellow butterflies under a warm sun; Mipo and friends at the edge.",
+     "motion": "Yellow butterflies flutter around Mipo; he spins happily.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "Yellow, yellow, like the sun!",
+       "sing-song, sunny"
+      ],
+      [
+       4.5,
+       "mipo",
+       "Can you find something yellow where you are?",
+       "inviting the viewer; leave a pause after"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       2.0,
+       -12,
+       "light fluttering butterfly wings and soft chimes"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Too tall!",
+     "camera": "Low angle looking up past Mipo at the giant sunflowers.",
+     "start_frame": "Mipo stands among sunflowers much taller than him, standing on tiptoe, trying to see over them.",
+     "motion": "Mipo hops up and down to see; the sunflowers sway; he can't see over.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "mipo",
+       "Hmm... the sunflowers are so tall. I can't see the sparkles!",
+       "puzzled, a little funny"
+      ]
+     ],
+     "sfx": [
+      [
+       2.0,
+       2.0,
+       -12,
+       "soft little hop sounds"
+      ]
+     ],
+     "wand": "left",
+     "expression": "puzzled",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Baby Deer appears",
+     "camera": "Medium shot, sunflowers part.",
+     "start_frame": "The sunflowers part and the spotted baby deer steps out gently, smiling at Mipo.",
+     "motion": "The deer lowers its head politely and smiles; Mipo waves hello.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "deer",
+       "Hello! I'm tall. Maybe I can help!",
+       "gentle, kind, a little dreamy"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       1.5,
+       -12,
+       "soft rustle of sunflowers parting"
+      ]
+     ],
+     "wand": "left",
+     "expression": "delighted",
+     "friends": [
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "The deer looks",
+     "camera": "Over-the-shoulder from behind the deer looking over the sunflowers.",
+     "start_frame": "The baby deer stretches its neck to look over the sunflowers; far away, the sparkle trail enters a green forest.",
+     "motion": "The deer's ears perk up and it turns back to Mipo happily.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "deer",
+       "I see the sparkles! They are going into the Green Forest.",
+       "gentle, pleased"
+      ]
+     ],
+     "sfx": [],
+     "wand": "none",
+     "expression": "",
+     "friends": [
+      "deer"
+     ],
+     "mipo": false
+    },
+    {
+     "dur": 10,
+     "name": "Taking turns",
+     "camera": "Two-shot.",
+     "start_frame": "Mipo and the baby deer face each other among the sunflowers; the bunny and bird nearby.",
+     "motion": "Mipo thanks the deer; the deer bows; they agree to take turns leading, the deer lets the bunny go first.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "mipo",
+       "Thank you, Deer! Will you come too?",
+       "grateful, kind"
+      ],
+      [
+       4.3,
+       "deer",
+       "Yes! Let's take turns leading the way.",
+       "gentle, fair"
+      ],
+      [
+       8.4,
+       "narrator",
+       "Taking turns is a kind thing to do.",
+       "warm"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "grateful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Four friends together",
+     "camera": "Wide travel shot.",
+     "start_frame": "Mipo, the bunny, the baby deer and the blue bird walk in a happy line through the sunflowers toward a green forest.",
+     "motion": "They walk together in a line, taking turns at the front.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "light group footsteps on grass, birdsong"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "chapter": "Green: the whispering forest",
+   "title": "Green Whispering Forest",
+   "emotion": "a little nervous -> brave together",
+   "learning": "Color GREEN; being brave with friends",
+   "music": "Soft woodwinds and harp, a little mysterious but warm; brightens when fireflies appear",
+   "location": "Green Whispering Forest",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Into the green forest",
+     "camera": "Wide establishing shot.",
+     "start_frame": "A friendly forest of tall trees, green leaves, soft green moss and ferns, gentle light beams; the four friends at the entrance.",
+     "motion": "Leaves rustle gently; the friends look up in wonder.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "This is the Whispering Forest. Green leaves, green moss... green everywhere!",
+       "soft, wondering"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "gentle forest ambience, soft leaves whispering, birds"
+      ]
+     ],
+     "wand": "left",
+     "expression": "wonder",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "A little scared",
+     "camera": "Medium close-up on Mipo.",
+     "start_frame": "Inside the forest it is a bit shady (still friendly, soft light). Mipo hugs his wand, looking around.",
+     "motion": "Mipo looks around a bit nervously; a leaf falls; he takes a small breath.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "mipo",
+       "It's a little dark in here... I feel a bit scared.",
+       "honest, small voice, not crying"
+      ],
+      [
+       6.4,
+       "narrator",
+       "When we feel scared, we can hold a friend's hand.",
+       "warm, reassuring"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "a little nervous",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true,
+     "negative_extra": "dark, scary, monsters, shadows with faces"
+    },
+    {
+     "dur": 10,
+     "name": "Holding hands",
+     "camera": "Two-shot then wide.",
+     "start_frame": "The bunny takes Mipo's right hand; the deer stands close; the bird lands on Mipo's backpack.",
+     "motion": "Mipo smiles and stands taller; the friends huddle close and smile.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.8,
+       "bunny",
+       "We're right here, Mipo.",
+       "soft, sweet"
+      ],
+      [
+       4.8,
+       "mipo",
+       "Together... I feel brave!",
+       "growing confidence, warm"
+      ]
+     ],
+     "sfx": [
+      [
+       4.0,
+       1.5,
+       -12,
+       "warm soft harp shimmer"
+      ]
+     ],
+     "wand": "left",
+     "expression": "brave smile",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Fireflies light the way",
+     "camera": "Slow crane up through glowing fireflies.",
+     "start_frame": "Hundreds of friendly green-gold fireflies appear between the trees; Mipo's wand glows back at them.",
+     "motion": "The fireflies form a glowing path along the sparkle trail; everyone gasps happily.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "narrator",
+       "Look! The fireflies are lighting the way!",
+       "wonder, delight"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -10,
+       "gentle twinkling firefly shimmer"
+      ]
+     ],
+     "wand": "left",
+     "expression": "amazed",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Echo game",
+     "camera": "Medium shot of Mipo calling into a clearing.",
+     "start_frame": "Mipo stands in a mossy clearing, cupping his hands around his mouth.",
+     "motion": "Mipo calls out, the forest echoes softly, the friends giggle and call too.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Hellooo!",
+       "playful call"
+      ],
+      [
+       2.5,
+       "narrator",
+       "...hellooo... Can you say hello with Mipo? Hellooo!",
+       "the first word soft like an echo, then inviting the viewer"
+      ]
+     ],
+     "sfx": [
+      [
+       1.6,
+       1.5,
+       -12,
+       "soft friendly forest echo reverb tail"
+      ]
+     ],
+     "wand": "left",
+     "expression": "playful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "A frog's clue",
+     "camera": "Close-up on a lily pad by a forest pond.",
+     "start_frame": "A small cute green frog on a lily pad by a little forest pond; the blue bird listens to it.",
+     "motion": "The frog croaks and points toward the light at the forest's edge; the bird flaps happily and turns to Mipo.",
+     "end_frame": "",
+     "lines": [
+      [
+       3.0,
+       "bird",
+       "Tweet! The frog says a little purple drop went to the river!",
+       "excited, sing-song"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       1.0,
+       -9,
+       "cute friendly frog ribbit, soft"
+      ]
+     ],
+     "wand": "none",
+     "expression": "",
+     "friends": [
+      "bird"
+     ],
+     "mipo": false
+    },
+    {
+     "dur": 10,
+     "name": "Out of the forest",
+     "camera": "Tracking shot toward bright light.",
+     "start_frame": "The friends walk toward the bright edge of the forest where blue water sparkles.",
+     "motion": "They step out of the trees into bright sunshine, smiling.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       3.0,
+       3.0,
+       -15,
+       "babbling river sound growing louder"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "chapter": "Blue: the sparkle river",
+   "title": "Blue Sparkle River",
+   "emotion": "careful, confident",
+   "learning": "Color BLUE; counting 1-6; being careful",
+   "music": "Flowing harp arpeggios and flute, sparkling",
+   "location": "Blue Sparkle River and the stone bridge",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "The blue river",
+     "camera": "Wide establishing shot.",
+     "start_frame": "A sparkling blue river with a waterfall from the floating island castle (grey roofs), blue forget-me-not flowers on the banks; the friends at the water's edge.",
+     "motion": "Water sparkles and flows; a blue dragonfly zips by; Mipo smiles.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "Blue, blue... the river is blue!",
+       "sing-song, calm"
+      ],
+      [
+       5.0,
+       "mipo",
+       "And the sky is blue too!",
+       "cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       5.0,
+       -14,
+       "gentle flowing river and distant waterfall"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Stepping stones",
+     "camera": "Side tracking shot across stepping stones.",
+     "start_frame": "Six round stepping stones across a shallow stream. Mipo hops carefully from stone to stone, the bunny following.",
+     "motion": "Mipo hops carefully onto each stone in turn, arms out for balance, smiling.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "mipo",
+       "Let's count the stones as we hop! One... two... three...",
+       "playful counting"
+      ],
+      [
+       6.8,
+       "narrator",
+       "...four... five... six!",
+       "continuing the counting, joyful"
+      ]
+     ],
+     "sfx": [
+      [
+       3.2,
+       0.4,
+       -10,
+       "soft splashy hop"
+      ],
+      [
+       4.2,
+       0.4,
+       -10,
+       "soft splashy hop"
+      ],
+      [
+       5.2,
+       0.4,
+       -10,
+       "soft splashy hop"
+      ],
+      [
+       7.1,
+       0.4,
+       -10,
+       "soft splashy hop"
+      ],
+      [
+       8.1,
+       0.4,
+       -10,
+       "soft splashy hop"
+      ],
+      [
+       9.1,
+       0.5,
+       -9,
+       "soft splashy hop with sparkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "concentrating",
+     "friends": [
+      "bunny"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Slow and careful",
+     "camera": "Medium shot.",
+     "start_frame": "The baby deer steps carefully on the stones, the bird flying alongside, Mipo waiting on the far bank cheering.",
+     "motion": "The deer reaches the bank safely; everyone claps.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "Slow and careful. Good job, friends!",
+       "encouraging, warm"
+      ]
+     ],
+     "sfx": [
+      [
+       5.0,
+       1.5,
+       -12,
+       "soft happy clapping sparkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "proud",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "The stone bridge",
+     "camera": "Side tracking shot across the arched stone bridge.",
+     "start_frame": "The four friends cross the arched stone bridge with warm wooden railings over the river.",
+     "motion": "They walk across the bridge; at the far end the sparkle trail disappears into a glittering cave in a rocky hill.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "mipo",
+       "The sparkles go into that cave!",
+       "curious, pointing"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -14,
+       "light footsteps on a stone bridge"
+      ]
+     ],
+     "wand": "left",
+     "expression": "curious",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Crystal cave entrance",
+     "camera": "Slow push toward the cave mouth.",
+     "start_frame": "A friendly cave entrance decorated with crystals that should be purple but look soft grey; gentle light inside.",
+     "motion": "The sparkle trail floats into the cave; the friends peek in.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       1.0,
+       3.0,
+       -13,
+       "soft hollow cave hum with water drips, friendly"
+      ]
+     ],
+     "wand": "left",
+     "expression": "curious",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Into the cave",
+     "camera": "Tracking shot following them in.",
+     "start_frame": "Inside a softly lit crystal cave with smooth paths, grey crystals glowing faintly, the friends walking in together.",
+     "motion": "They walk in slowly, looking around with wonder; Mipo's wand lights the way.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "gentle cave ambience with soft crystal tinkles"
+      ]
+     ],
+     "wand": "left",
+     "expression": "wonder",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true,
+     "negative_extra": "dark, scary, bats, monsters"
+    }
+   ]
+  },
+  {
+   "id": "J",
+   "chapter": "Little Purple",
+   "title": "Crystal Cave: finding Little Purple",
+   "emotion": "empathy, kindness",
+   "learning": "Everyone is important; kindness helps others feel better",
+   "music": "Tender celesta and soft strings; warm swell when Little Purple smiles",
+   "location": "Crystal Cave",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Grey crystals",
+     "camera": "Wide shot inside the cave.",
+     "start_frame": "A big cave room with many crystals that look soft grey and dull; Mipo touches one gently.",
+     "motion": "The crystal flickers faintly purple for a second, then turns grey again.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "narrator",
+       "The crystals here should be purple... but they are grey.",
+       "soft, thoughtful"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "thoughtful",
+     "friends": [
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Someone is crying",
+     "camera": "Medium close-up on Mipo listening.",
+     "start_frame": "Mipo stops and puts a finger to his lips; the friends lean in to listen.",
+     "motion": "Mipo tilts his head, listening; a soft sniffle echoes gently.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "mipo",
+       "Shh... listen. Someone is crying.",
+       "whisper, caring"
+      ]
+     ],
+     "sfx": [
+      [
+       3.5,
+       2.0,
+       -14,
+       "tiny soft cute sniffle, gentle, not distressing"
+      ]
+     ],
+     "wand": "left",
+     "expression": "listening, caring",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Meet Little Purple",
+     "camera": "Close-up behind a crystal.",
+     "start_frame": "Behind a crystal hides Little Purple: a tiny glowing purple paint droplet with big sparkly eyes and a small sad face.",
+     "motion": "Little Purple peeks out shyly, glowing softly, then looks down.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "little_purple",
+       "I'm the purple. I felt so small... I thought nobody would miss me.",
+       "tiny, soft, shy, a little sad"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       1.5,
+       -10,
+       "delicate purple shimmer twinkle"
+      ]
+     ],
+     "wand": "none",
+     "expression": "",
+     "friends": [],
+     "mipo": false
+    },
+    {
+     "dur": 10,
+     "name": "We missed you!",
+     "camera": "Close two-shot, Mipo kneeling.",
+     "start_frame": "Mipo kneels down to Little Purple's level, smiling kindly, holding out his right hand.",
+     "motion": "Little Purple floats a little closer to Mipo's hand.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "We missed you so much! The rainbow needs you!",
+       "very kind, gentle"
+      ],
+      [
+       5.5,
+       "narrator",
+       "Every color is important. And every friend is important too.",
+       "warm, slow, meaningful"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "kind, gentle",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Friends say so too",
+     "camera": "Group shot.",
+     "start_frame": "The bunny, the baby deer and the blue bird gather around Little Purple and Mipo, smiling warmly.",
+     "motion": "Each friend leans in kindly as they speak; Little Purple glows a little brighter with each kind word.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "bunny",
+       "We need you!",
+       "sweet"
+      ],
+      [
+       3.0,
+       "deer",
+       "You make the flowers pretty!",
+       "gentle"
+      ],
+      [
+       6.0,
+       "bird",
+       "Tweet, tweet! Come home!",
+       "cheerful"
+      ]
+     ],
+     "sfx": [
+      [
+       2.0,
+       4.0,
+       -12,
+       "rising warm shimmer, getting brighter"
+      ]
+     ],
+     "wand": "left",
+     "expression": "kind",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Little Purple smiles",
+     "camera": "Close-up, warm light.",
+     "start_frame": "Little Purple glows brightly, big happy smile; the crystals around begin to glimmer faintly purple.",
+     "motion": "Little Purple does a happy little spin in the air; sparkles fall; the friends cheer.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "little_purple",
+       "Really? Okay! Let's go home!",
+       "tiny, joyful, bubbly"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       2.0,
+       -8,
+       "happy magical spin twinkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Out of the cave",
+     "camera": "Tracking shot.",
+     "start_frame": "Mipo walks out of the cave into the sunlight with Little Purple floating beside his shoulder and the friends behind.",
+     "motion": "They walk toward a big grassy hill under the rainbow with the gap.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -15,
+       "cheerful footsteps, birdsong returning"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "K",
+   "chapter": "Magic time!",
+   "title": "Completing the rainbow",
+   "emotion": "anticipation -> joy",
+   "learning": "Counting down 3-2-1; the full rainbow",
+   "music": "Building drum roll and strings into a big but gentle magical swell on the tap; joyful full orchestra after",
+   "location": "Rainbow Hill",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Rainbow Hill",
+     "camera": "Wide, low angle.",
+     "start_frame": "Mipo and his friends climb to the top of a grassy hill right under the rainbow with the empty purple gap; Little Purple floats beside Mipo.",
+     "motion": "They reach the top and look up at the gap.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.8,
+       "narrator",
+       "Mipo and his friends climb to the top of Rainbow Hill.",
+       "building excitement"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "determined",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Ready?",
+     "camera": "Medium shot of Mipo and Little Purple, then Mipo turns to camera.",
+     "start_frame": "Mipo holds the star wand in his left hand next to Little Purple floating in the air.",
+     "motion": "Mipo smiles at Little Purple, then turns to the camera to invite the viewer.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "mipo",
+       "Are you ready, Little Purple?",
+       "warm, excited"
+      ],
+      [
+       3.3,
+       "little_purple",
+       "Ready!",
+       "tiny and bubbly"
+      ],
+      [
+       5.0,
+       "mipo",
+       "Friends at home, count with me!",
+       "inviting the viewer"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "excited",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "Countdown",
+     "camera": "Close-up on the glowing wand tip, then Mipo.",
+     "start_frame": "The star wand glows brighter and brighter.",
+     "motion": "The wand pulses with each number.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.3,
+       "narrator",
+       "Three... two... one!",
+       "big countdown, one number per second"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       0.5,
+       -9,
+       "soft drum tick"
+      ],
+      [
+       1.3,
+       0.5,
+       -9,
+       "soft drum tick"
+      ],
+      [
+       2.3,
+       0.6,
+       -8,
+       "soft drum tick with shimmer"
+      ]
+     ],
+     "wand": "left",
+     "expression": "concentrating",
+     "friends": [],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "The tap: MAGIC!",
+     "camera": "Close-up on the tap.",
+     "start_frame": "Mipo gently touches Little Purple with the star tip of his wand.",
+     "motion": "A soft magical flash; Little Purple turns into a swirl of purple sparkles that rises into the sky.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.6,
+       "mipo",
+       "MAGIC!",
+       "joyful, the big moment; land the word on the tap",
+       "MAGIC",
+       1.0
+      ]
+     ],
+     "sfx": [
+      [
+       1.0,
+       2.0,
+       -6,
+       "bright magical bell tap followed by a soft upward sparkly whoosh, not loud"
+      ]
+     ],
+     "wand": "tap",
+     "expression": "joyful",
+     "friends": [],
+     "mipo": true,
+     "restores_purple": true,
+     "continuity": "During this shot purple is restored: the swirl leaves Little Purple and rises."
+    },
+    {
+     "dur": 10,
+     "name": "Painting the stripe",
+     "camera": "Tilt up from the friends to the sky.",
+     "start_frame": "Purple sparkles swirl up from the hilltop toward the gap in the rainbow.",
+     "motion": "The sparkles paint the missing purple stripe into the rainbow from left to right; the stripe glows.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.0,
+       "narrator",
+       "Swish! The purple goes back into the rainbow!",
+       "wonder, delight"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -9,
+       "shimmering sparkle sweep painting across the sky"
+      ]
+     ],
+     "wand": "left",
+     "expression": "amazed",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Purple everywhere",
+     "camera": "Wide sweeping shot over the valley.",
+     "start_frame": "The whole valley in full color: purple castle roofs, glowing purple crystals, purple flowers blooming everywhere, full rainbow.",
+     "motion": "Purple color spreads across the valley like a gentle wave: flowers bloom, castle roofs turn purple, crystals glow.",
+     "end_frame": "",
+     "lines": [
+      [
+       1.5,
+       "mipo",
+       "The rainbow is complete!",
+       "overjoyed"
+      ]
+     ],
+     "sfx": [
+      [
+       0.5,
+       4.0,
+       -10,
+       "wave of blooming flower sparkles"
+      ]
+     ],
+     "wand": "left",
+     "expression": "overjoyed",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 5,
+     "name": "Full rainbow",
+     "camera": "Wide hero shot.",
+     "start_frame": "The complete rainbow with all six stripes shining over the valley; the friends tiny on the hilltop cheering.",
+     "motion": "The rainbow glows brightly; a gentle sparkle passes along it.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [
+      [
+       0.5,
+       2.5,
+       -8,
+       "warm triumphant chime chord"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "chapter": "Hooray! See you next magic moment!",
+   "title": "Celebration, recap and goodbye",
+   "emotion": "joy, pride",
+   "learning": "Recap: colors, feelings, friendship",
+   "music": "Joyful theme reprise; rainbow color song (original); calm outro and end-screen loop",
+   "location": "Rainbow Hill in full color",
+   "shots": [
+    {
+     "dur": 10,
+     "name": "Dance party",
+     "camera": "Wide, gentle orbit.",
+     "start_frame": "Mipo, the bunny, the baby deer, the blue bird and a happy Little Purple dancing on the hilltop under the full rainbow; confetti sparkles.",
+     "motion": "Everyone dances gently: the bunny hops, the deer bounces, the bird loops, Mipo spins with his wand.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Hooray! We did it!",
+       "joyful cheer, not shouting"
+      ],
+      [
+       4.0,
+       "narrator",
+       "Hooray for Mipo and his friends!",
+       "celebrating"
+      ]
+     ],
+     "sfx": [
+      [
+       0.3,
+       3.0,
+       -9,
+       "joyful celebration sparkle flourish with happy bird tweets"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Rainbow color song",
+     "camera": "Medium shot, Mipo pointing to each stripe.",
+     "start_frame": "Mipo stands under the full rainbow pointing up at the stripes, friends beside him.",
+     "motion": "Mipo points to each stripe in order as it glows: red, orange, yellow, green, blue, purple.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Red, orange, yellow, green, blue... and purple!",
+       "sing-song, one color per beat, slow"
+      ]
+     ],
+     "sfx": [
+      [
+       0.6,
+       0.4,
+       -12,
+       "bell note"
+      ],
+      [
+       1.6,
+       0.4,
+       -12,
+       "bell note"
+      ],
+      [
+       2.6,
+       0.4,
+       -12,
+       "bell note"
+      ],
+      [
+       3.6,
+       0.4,
+       -12,
+       "bell note"
+      ],
+      [
+       4.6,
+       0.4,
+       -12,
+       "bell note"
+      ],
+      [
+       6.0,
+       0.8,
+       -10,
+       "bell note with sparkle"
+      ]
+     ],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "What we learned",
+     "camera": "Medium close-up of Mipo talking to camera.",
+     "start_frame": "Mipo sits on the grass facing the camera, Little Purple on his shoulder, friends behind.",
+     "motion": "Mipo talks warmly to the viewer, counting the feelings on his fingers.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Today I felt sad, then brave, then happy! And my friends helped me.",
+       "warm, reflective, smiling"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "warm",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Remember",
+     "camera": "Wide, calm.",
+     "start_frame": "The friends sitting together on the hill watching the rainbow, golden light.",
+     "motion": "Gentle breeze, flowers sway, everyone leans together happily.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "narrator",
+       "Remember: it's okay to feel sad, friends help each other, and every color is important.",
+       "warm, slow, meaningful"
+      ]
+     ],
+     "sfx": [],
+     "wand": "left",
+     "expression": "content",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "Goodbye wave",
+     "camera": "Medium shot, Mipo looks straight at camera.",
+     "start_frame": "Mipo stands facing the camera under the rainbow, holding the wand up in his left hand, friends around him, top area of the frame clear for text.",
+     "motion": "Mipo waves at the viewer with his right hand and smiles; friends wave too.",
+     "end_frame": "",
+     "lines": [
+      [
+       0.5,
+       "mipo",
+       "Thank you for helping me, friends! See you next magic moment!",
+       "warm sign-off, smiling, slightly slower"
+      ]
+     ],
+     "sfx": [
+      [
+       6.5,
+       2.0,
+       -9,
+       "warm soft final chime"
+      ]
+     ],
+     "wand": "left",
+     "expression": "joyful",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true
+    },
+    {
+     "dur": 10,
+     "name": "End screen",
+     "camera": "Static wide shot with clear space on the right and top (for YouTube end-screen elements added in YouTube Studio).",
+     "start_frame": "Mipo and friends on the left third of the frame waving under the rainbow; right two-thirds is open sky and meadow for end-screen cards; no text.",
+     "motion": "Gentle looping motion: friends wave, sparkles drift, clouds move.",
+     "end_frame": "",
+     "lines": [],
+     "sfx": [],
+     "wand": "left",
+     "expression": "happy",
+     "friends": [
+      "bird",
+      "bunny",
+      "deer"
+     ],
+     "mipo": true,
+     "negative_extra": "text, letters, logo, buttons"
+    }
+   ]
+  }
+ ]
+}

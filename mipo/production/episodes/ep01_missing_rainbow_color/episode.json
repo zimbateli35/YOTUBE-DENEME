@@ -1,0 +1,379 @@
+{
+  "episode": 1,
+  "slug": "ep01_missing_rainbow_color",
+  "title": "Mipo and the Missing Rainbow Color",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "aspect": "9:16",
+    "fps": 30,
+    "duration": 30.0
+  },
+  "missing_color_note": "The missing color is PURPLE. It appears nowhere on Mipo, so his outfit never changes. Until the tap (22.05 s) the rainbow has no purple stripe and purple things in the world (castle roofs, crystals, purple flowers) are soft grey; the world is slightly desaturated. After the tap, purple returns everywhere.",
+  "storyboard_reference": "output/mipo_ep1_missing_rainbow_color_1080x1920.mp4 (2D v1 animatic: timing and blocking only; pants were blue there - follow the banner, not the animatic, for wardrobe).",
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.0,
+      "name": "Wake up",
+      "location": "Cozy pastel treehouse bedroom, warm wooden walls, round window",
+      "camera": "Open on a slow push-in close on sleeping Mipo (hook in first second: sunbeam sparkles + yawn), ease out to medium-wide as he hops out of bed, end with slight push toward the window.",
+      "camera_motion": "slow push-in, then ease out as he hops out of bed.",
+      "beats": [
+        "0.0-0.8 Mipo sits up in bed with blanket over his legs, eyes closed, sunbeam with floating golden dust sparkles across him",
+        "0.8-1.4 opens his eyes, big stretch with both arms up, cute yawn",
+        "1.4-2.2 hops out of bed onto a pink round rug, happy",
+        "2.2-5.0 looks up at the round window: the rainbow outside is missing its purple stripe; gasps 'Oh no!' and points at it"
+      ],
+      "start_frame": "Cozy pastel treehouse bedroom at sunrise, warm wooden plank walls, a glowing hanging lantern, a little shelf of colorful books, a big round window showing a blue sky with a rainbow that has red, orange, yellow, green and blue stripes but NO purple stripe. Mipo sits up in a small wooden bed with a teal star-patterned blanket over his legs, eyes closed, sleepy smile, wearing his full outfit. His star wand lies glowing on the wooden bedside table. Golden sunbeams with floating sparkles.",
+      "motion": "Mipo slowly opens his eyes, stretches both arms up with a cute yawn, hops out of bed onto the pink rug, looks up at the round window and gasps, pointing at the rainbow. Sunbeam dust sparkles drift. Gentle slow camera push-in, then ease out.",
+      "end_frame": "Mipo standing on the pink rug in full outfit, surprised open mouth, pointing up at the window rainbow with the missing purple stripe.",
+      "continuity": "Wand stays on the bedside table in this scene. Goggles on his head (also while in bed). Scarf, jacket and backpack are worn (storybook logic).",
+      "wand": "His star wand is NOT in his hands: it lies glowing on the wooden bedside table next to the bed.",
+      "negative_extra": "pajamas, nightcap, purple stripe in rainbow"
+    },
+    {
+      "id": 2,
+      "start": 5.0,
+      "end": 10.0,
+      "name": "The wand and the trail",
+      "location": "Treehouse porch with wooden railing overlooking the magical valley",
+      "camera": "Medium shot of Mipo on the porch, valley behind him; slow push-in; slight rack focus to the sparkle trail at the end.",
+      "camera_motion": "slow push-in toward Mipo and the valley.",
+      "beats": [
+        "5.0-5.6 Mipo looks around, puzzled, finger on chin",
+        "5.6-6.2 his golden star wand floats out through the treehouse door with a sparkle trail and lands in his hand",
+        "6.2-7.4 he raises it proudly, the star glows brighter",
+        "7.4-10.0 tiny glowing sparkles appear and form a winding trail from the porch down toward a small stone bridge; Mipo points with his free hand: 'Let's find it!'"
+      ],
+      "start_frame": "Mipo stands on a wooden treehouse porch with a railing and two little flower pots, looking puzzled with a finger on his chin. Behind him a wide magical valley in slightly muted colors: rolling hills, river, a small arched stone bridge in the distance, a floating island castle whose cone roofs are soft grey, a waterfall, and a rainbow without its purple stripe. Morning light.",
+      "motion": "The golden star wand floats out of the treehouse door and gently flies into Mipo's left hand with a sparkle trail. He raises the wand happily, its star glows. Tiny glowing golden and lilac sparkles appear one by one and form a winding trail from the porch toward the distant stone bridge. Mipo points at the trail with his other hand, excited smile. Slow push-in.",
+      "end_frame": "Mipo holding the glowing wand up, pointing at a sparkle trail leading to the bridge.",
+      "continuity": "From here on the wand is always in Mipo's LEFT hand (appears on the viewer's right when he faces the camera), exactly as in the banner; his right hand is free for pointing and waving. Scarf tail flows to his left (viewer's right).",
+      "wand": "At the start the wand is NOT in his hand yet; it floats out of the treehouse door and lands in his LEFT hand (viewer's right). From then on he holds it in his left hand.",
+      "negative_extra": "purple stripe in rainbow, purple roofs, saturated purple"
+    },
+    {
+      "id": 3,
+      "start": 10.0,
+      "end": 15.0,
+      "name": "Across the bridge",
+      "location": "Arched stone bridge over a sparkling river",
+      "camera": "Side-on tracking shot following Mipo left to right across the bridge; slight parallax; ends medium two-shot with the bird.",
+      "camera_motion": "side tracking shot with soft parallax.",
+      "beats": [
+        "10.0-11.0 Mipo walks happily onto the bridge following the sparkles",
+        "11.0-12.2 a friendly round blue bird flies in from the right and flutters beside his shoulder",
+        "12.2-14.0 Mipo stops and gently talks with the bird; the bird chirps and nods",
+        "14.0-15.0 they continue together; colors start to feel a little brighter"
+      ],
+      "start_frame": "Side view of Mipo walking onto an arched stone bridge with warm wooden railings over a sparkling blue river, following a trail of tiny glowing sparkles floating above the bridge. Background: waterfall from a floating island castle with grey-ish roofs, butterflies, colorful flowers on the riverbank, rainbow without purple stripe. Bright but slightly muted colors.",
+      "motion": "Mipo walks cheerfully across the bridge following the floating sparkles. A friendly round blue bird flies in and flutters next to his shoulder. Mipo stops, smiles and gently talks to the bird; the bird chirps and nods. They continue together. Camera tracks sideways with soft parallax. Butterflies flutter, river sparkles.",
+      "end_frame": "Mipo and the blue bird together in the middle of the bridge, both smiling, sparkles ahead.",
+      "continuity": "Bird design is locked from here (round sky-blue, white face/belly, orange beak, head tuft).",
+      "wand": "He holds the golden star wand in his LEFT hand (viewer's right when he faces the camera).",
+      "negative_extra": "purple stripe in rainbow, crowded frame, Mipo too small (keep him at least 35% of frame height)"
+    },
+    {
+      "id": 4,
+      "start": 15.0,
+      "end": 20.0,
+      "name": "Friends find the color",
+      "location": "Flower meadow near the giant treehouse tree, purple crystals (grey for now)",
+      "camera": "Medium-wide group shot, gentle push toward the flower.",
+      "camera_motion": "gentle push toward the flower.",
+      "staging": "Left: Mipo. Center-right foreground: a large pink flower. Behind and between Mipo and the flower: the baby deer (fully in frame, facing the flower). Right foreground: the white bunny. Above the group: the blue bird.",
+      "beats": [
+        "15.0-15.8 a white bunny hops in from the right and a baby deer walks in, both stop near a big pink flower",
+        "15.8-16.6 the bunny points at the flower, everyone leans in",
+        "16.6-17.4 the flower petals open and reveal a glowing purple magical droplet",
+        "17.4-20.0 everyone smiles with delight; Mipo gasps happily: 'Look! Our friends found the missing color!'"
+      ],
+      "start_frame": "A sunny flower meadow. Mipo on the left holding his glowing star wand, the blue bird hovering above, a big closed pink flower bud in the center-right foreground, a white bunny and a spotted baby deer arriving from the right. Grey crystals, slightly muted colors, rainbow without purple stripe in the sky, floating castle far away.",
+      "motion": "The white bunny hops in and the baby deer walks in; the deer stops behind and between Mipo and the flower, facing the flower, completely visible. The big pink flower slowly opens its petals to reveal a softly glowing purple magic droplet that bobs and sparkles. Everyone leans in and smiles with delight. Gentle push-in.",
+      "end_frame": "All four friends around the open flower with the glowing purple droplet; deer fully visible between Mipo and the flower.",
+      "continuity": "Deer position here must match scene 5's start (same spot).",
+      "wand": "He holds the golden star wand in his LEFT hand (viewer's right when he faces the camera).",
+      "negative_extra": "deer hidden behind flower, deer cropped by frame edge, purple stripe in rainbow"
+    },
+    {
+      "id": 5,
+      "start": 20.0,
+      "end": 25.0,
+      "name": "One little tap",
+      "location": "Same meadow, closer framing, then reveal of the sky",
+      "camera": "Clip A (20.0-22.6): medium close-up framing Mipo, the flower, the bunny AND the full baby deer. Clip B (22.6-25.0): smooth tilt-up / pull-back from the flower to the sky as the purple stripe paints back into the rainbow.",
+      "camera_motion": "medium close-up on the tap, then smooth tilt-up and pull-back to the sky.",
+      "staging": "SPEC FIX (v1 animatic issue): the baby deer must be FULLY VISIBLE for the entire 20-22 s shot - head, antlers, ears, body, legs and hooves inside the 9:16 frame, not hidden behind the flower, the bird or the frame edge. Stage the deer behind and between Mipo and the flower, facing the flower, at roughly 55-80% of frame width and 55-75% of frame height. The bird hovers above Mipo's head, never in front of the deer. Keep at least 6% safe margin from every frame edge around the deer.",
+      "beats": [
+        "20.0-21.2 Mipo lifts his wand high, star glowing brighter",
+        "21.2-22.05 he gently swings it down and taps the droplet exactly on the word 'MAGIC' (22.05 s)",
+        "22.05-22.6 soft flash; the droplet bursts into a swirl of purple sparkles",
+        "22.6-24.4 the purple sparkles fly up into the sky and paint the missing purple stripe back into the rainbow from left to right; castle roofs, crystals and flowers regain purple; colors brighten",
+        "24.4-25.0 full rainbow glowing"
+      ],
+      "start_frame": "Medium close-up in the meadow: Mipo on the left raising his glowing golden star wand, the open pink flower with the glowing purple droplet on the right, the white bunny beside the flower, the spotted baby deer standing fully visible behind and between Mipo and the flower facing the flower, the blue bird hovering above Mipo. Slightly muted colors.",
+      "motion": "Mipo gently taps the purple droplet with his golden star wand. A soft magical flash, and the droplet turns into a swirl of purple sparkles that rise into the sky. Camera tilts up and pulls back as the sparkles paint the missing purple stripe back into the rainbow, and purple color spreads back across the valley: castle roofs, crystals and flowers. Everyone looks up in wonder.",
+      "end_frame": "Wide shot: complete rainbow with a bright purple stripe, vivid valley, friends looking up joyfully.",
+      "continuity": "Deer stays in the same spot as scene 4. Wand stays in the same hand.",
+      "wand": "He holds the golden star wand in his LEFT hand and taps the droplet with it.",
+      "negative_extra": "deer hidden, deer cropped, explosion, fire, loud flash, scary"
+    },
+    {
+      "id": 6,
+      "start": 25.0,
+      "end": 30.0,
+      "name": "Hooray!",
+      "location": "Meadow under the complete rainbow, full color",
+      "camera": "Wide-to-medium celebratory shot, gentle settle; Mipo center, looking into camera for the wave; top 25% of frame kept clear for the end card.",
+      "camera_motion": "gentle settle, Mipo centered, top of frame kept clear.",
+      "beats": [
+        "25.0-26.8 everyone celebrates: bunny hops, deer bounces, bird loops in the air, star-shaped confetti sparkles",
+        "26.8-30.0 Mipo looks straight into the camera and waves with his free hand, big smile, wand sparkling; end card 'See you next magic moment!' appears at the top"
+      ],
+      "start_frame": "Bright full-color meadow under a complete rainbow with a vivid purple stripe, the floating castle with purple roofs and waterfall, glowing purple crystals, flowers everywhere. Mipo in the center with the white bunny on the left, the baby deer on the right and the blue bird flying above, all celebrating with happy smiles, gentle star-shaped sparkle confetti. Clear sky space at the top of the frame.",
+      "motion": "The friends celebrate gently: the bunny hops, the deer bounces, the bird does a happy loop. Mipo looks directly into the camera, smiles and waves with his free hand while his wand sparkles. Soft confetti sparkles fall. Camera settles slowly. Leave the top quarter of the frame clear.",
+      "end_frame": "Mipo waving at the viewer, friends around him, rainbow above, clean space at the top for text.",
+      "continuity": "Final frame should be calm and readable for 1.5 s (end card).",
+      "wand": "He holds the golden star wand up in his LEFT hand and waves at the viewer with his RIGHT hand.",
+      "negative_extra": "text, letters, logo, crowd, fast camera shake"
+    }
+  ],
+  "end_card": {
+    "start": 27.1,
+    "text": [
+      "See you next",
+      "magic moment!"
+    ],
+    "subtitle": "Mipo's Magical World",
+    "note": "Add in the editor (not inside the AI video) so the text is crisp and spelled correctly."
+  },
+  "voice": {
+    "character": "Mipo - ONE consistent voice for all ten lines (no separate narrator)",
+    "description": "Warm, cheerful, natural-sounding young boy, about 6-7 years old, clear American English, friendly and calm, gentle excitement, never shouting. Pace about 2.2-2.6 words per second.",
+    "consistency": "Use the same voice (same ElevenLabs Voice ID, or the same actor in one session) and the same settings for every line and every episode."
+  },
+  "narration": [
+    {
+      "id": "L01",
+      "speaker": "mipo",
+      "start": 0.3,
+      "must_end": 1.9,
+      "text": "Good morning! I'm Mipo!",
+      "delivery": "bright, sunny, friendly self-introduction with a sleepy-happy smile in the voice"
+    },
+    {
+      "id": "L02",
+      "speaker": "mipo",
+      "start": 2.25,
+      "must_end": 4.8,
+      "text": "Oh no! A rainbow color is missing!",
+      "delivery": "gentle surprise, NOT scared; small pause after 'Oh no!'"
+    },
+    {
+      "id": "L03",
+      "speaker": "mipo",
+      "start": 5.4,
+      "must_end": 7.3,
+      "text": "Where did the purple go?",
+      "delivery": "curious, wondering, rising question"
+    },
+    {
+      "id": "L04",
+      "speaker": "mipo",
+      "start": 7.6,
+      "must_end": 9.2,
+      "text": "Let's find it!",
+      "delivery": "determined and excited, warm"
+    },
+    {
+      "id": "L05",
+      "speaker": "mipo",
+      "start": 10.5,
+      "must_end": 13.2,
+      "text": "Follow those magical sparkles!",
+      "delivery": "playful, sing-song on 'sparkles'"
+    },
+    {
+      "id": "L06",
+      "speaker": "mipo",
+      "start": 15.5,
+      "must_end": 18.8,
+      "text": "Look! Our friends found the missing color!",
+      "delivery": "delighted, proud of his friends; small pause after 'Look!'"
+    },
+    {
+      "id": "L07",
+      "speaker": "mipo",
+      "start": 20.4,
+      "must_end": 21.7,
+      "text": "One little tap...",
+      "delivery": "soft, almost whispered anticipation, slow"
+    },
+    {
+      "id": "L08",
+      "speaker": "mipo",
+      "start": 21.75,
+      "must_end": 23.0,
+      "text": "...and MAGIC!",
+      "delivery": "joyful reveal; the word 'MAGIC' must land on the wand tap at 22.05 s",
+      "sync_point": {
+        "word": "MAGIC",
+        "time": 22.05
+      }
+    },
+    {
+      "id": "L09",
+      "speaker": "mipo",
+      "start": 25.3,
+      "must_end": 26.9,
+      "text": "Hooray! We did it!",
+      "delivery": "happy cheer, warm, not shouting"
+    },
+    {
+      "id": "L10",
+      "speaker": "mipo",
+      "start": 27.2,
+      "must_end": 29.4,
+      "text": "See you next magic moment!",
+      "delivery": "warm sign-off to the viewer, smiling, slightly slower, friendly"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "SFX01",
+      "t": 0.05,
+      "dur": 1.5,
+      "gain_db": -6,
+      "prompt": "soft magical sparkle chime with gentle twinkling bells, children's cartoon, no voice",
+      "cue": "soft sparkle chime (hook)"
+    },
+    {
+      "id": "SFX02",
+      "t": 0.9,
+      "dur": 3.0,
+      "gain_db": -14,
+      "prompt": "distant cheerful morning songbirds chirping softly outside a window, calm",
+      "cue": "distant cheerful morning birds"
+    },
+    {
+      "id": "SFX03",
+      "t": 1.5,
+      "dur": 0.6,
+      "gain_db": -8,
+      "prompt": "soft quick cartoon whoosh, a small child hopping out of bed, gentle",
+      "cue": "soft whoosh as Mipo hops out of bed"
+    },
+    {
+      "id": "SFX04",
+      "t": 2.4,
+      "dur": 1.5,
+      "gain_db": -9,
+      "prompt": "gentle descending three-note music box chime, curious and soft, not sad",
+      "cue": "gentle descending 'missing' chime (not sad, not scary)"
+    },
+    {
+      "id": "SFX05",
+      "t": 5.6,
+      "dur": 1.0,
+      "gain_db": -8,
+      "prompt": "light magical whoosh with sparkles as a small wand flies through the air",
+      "cue": "magical whoosh: wand flies in"
+    },
+    {
+      "id": "SFX06",
+      "t": 6.2,
+      "dur": 1.2,
+      "gain_db": -8,
+      "prompt": "bright shimmering magic sparkle, a wand starts to glow, gentle",
+      "cue": "bright shimmer: wand lands in hand"
+    },
+    {
+      "id": "SFX07",
+      "t": 7.4,
+      "dur": 2.5,
+      "gain_db": -10,
+      "prompt": "series of tiny twinkling sparkle sounds appearing one by one, magical trail",
+      "cue": "twinkles as the sparkle trail forms"
+    },
+    {
+      "id": "SFX08",
+      "t": 10.8,
+      "dur": 3.0,
+      "gain_db": -14,
+      "prompt": "light soft child footsteps on a stone bridge, cheerful pace",
+      "cue": "light footsteps on stone"
+    },
+    {
+      "id": "SFX09",
+      "t": 11.2,
+      "dur": 1.5,
+      "gain_db": -9,
+      "prompt": "soft bird wing flutter and one cheerful small bird tweet",
+      "cue": "soft wing flutter + cheerful bird tweet"
+    },
+    {
+      "id": "SFX10",
+      "t": 15.3,
+      "dur": 0.8,
+      "gain_db": -9,
+      "prompt": "soft cartoon boing pop of a bunny hopping in, gentle and cute",
+      "cue": "soft boing / pop as bunny arrives"
+    },
+    {
+      "id": "SFX11",
+      "t": 16.6,
+      "dur": 1.5,
+      "gain_db": -8,
+      "prompt": "rising gentle harp glissando as a flower blooms, magical",
+      "cue": "rising harp gliss: flower opens"
+    },
+    {
+      "id": "SFX12",
+      "t": 22.05,
+      "dur": 2.0,
+      "gain_db": -6,
+      "prompt": "bright magical bell tap followed by a soft upward sparkly whoosh, not loud",
+      "cue": "wand tap: bright bell + soft whoosh upward"
+    },
+    {
+      "id": "SFX13",
+      "t": 22.6,
+      "dur": 2.0,
+      "gain_db": -9,
+      "prompt": "shimmering sparkle sweep, magical colors painting across the sky",
+      "cue": "shimmering sparkle sweep while the stripe paints back"
+    },
+    {
+      "id": "SFX14",
+      "t": 25.0,
+      "dur": 2.5,
+      "gain_db": -9,
+      "prompt": "joyful gentle celebration sparkle flourish with happy little bird tweets",
+      "cue": "celebration sparkle flourish + happy bird tweets"
+    },
+    {
+      "id": "SFX15",
+      "t": 28.9,
+      "dur": 1.1,
+      "gain_db": -8,
+      "prompt": "warm soft final chime, gentle and happy ending",
+      "cue": "warm final chime"
+    }
+  ],
+  "music": "Original, playful, magical, gentle: music box / celesta, pizzicato strings, soft glockenspiel and warm pad, 96-104 BPM, C major. Light and calm in scene 1-2, curious in 3-4, brief soft build into the tap (21-22 s), joyful full but gentle in scene 6, clean ending at 30.0 s. Duck under narration by about 6-8 dB.",
+  "audio_mix": {
+    "music_gain_db": -16,
+    "duck_under_voice_db": "sidechain ~6-8 dB",
+    "target_lufs": -14,
+    "true_peak_db": -1.5,
+    "tracks": [
+      "narration",
+      "dialogue",
+      "music",
+      "sfx"
+    ],
+    "note": "Ep1 has no separate storyteller: all lines are Mipo (dialogue track). The narration track is kept (silent in Ep1) so future episodes can add a narrator without changing the pipeline."
+  }
+}

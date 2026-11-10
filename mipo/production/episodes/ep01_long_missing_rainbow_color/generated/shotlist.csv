@@ -1,0 +1,70 @@
+scene,sequence,name,start,end,duration,location,camera,image_prompt,video_prompt,approved_clip
+1,A,Valley flyover to Mipo,0.0,10.0,10.0,Rainbow Hill above the magical valley,Slow aerial glide over the colorful valley down to Mipo on a grassy hill.,prompts/scene_01_image.txt,prompts/scene_01_video.txt,clips/scene_01.mp4
+2,A,Will you help me?,10.0,20.0,10.0,Rainbow Hill above the magical valley,"Medium close-up, Mipo talks to camera; gentle push-in.",prompts/scene_02_image.txt,prompts/scene_02_video.txt,clips/scene_02.mp4
+3,B,Theme: running with friends,20.0,30.0,10.0,Montage around the magical valley,Tracking shot alongside Mipo running through flowers.,prompts/scene_03_image.txt,prompts/scene_03_video.txt,clips/scene_03.mp4
+4,B,Theme: wand sparkle spin,30.0,40.0,10.0,Montage around the magical valley,"Low-angle hero shot, slow orbit around Mipo.",prompts/scene_04_image.txt,prompts/scene_04_video.txt,clips/scene_04.mp4
+5,B,Theme: logo moment,40.0,45.0,5.0,Montage around the magical valley,Static wide sky shot with space in the center for the logo (added in the editor).,prompts/scene_05_image.txt,prompts/scene_05_video.txt,clips/scene_05.mp4
+6,C,Wake up,45.0,55.0,10.0,"Cozy pastel treehouse bedroom, then the treehouse porch",Slow push-in on the bed.,prompts/scene_06_image.txt,prompts/scene_06_video.txt,clips/scene_06.mp4
+7,C,Big stretch,55.0,60.0,5.0,"Cozy pastel treehouse bedroom, then the treehouse porch",Medium shot.,prompts/scene_07_image.txt,prompts/scene_07_video.txt,clips/scene_07.mp4
+8,C,The window: purple is gone,60.0,70.0,10.0,"Cozy pastel treehouse bedroom, then the treehouse porch","Over-the-shoulder shot from behind Mipo to the round window, then reverse close-up of his face.",prompts/scene_08_image.txt,prompts/scene_08_video.txt,clips/scene_08.mp4
+9,C,Sad on the porch,70.0,80.0,10.0,"Cozy pastel treehouse bedroom, then the treehouse porch","Wide, then slow push to medium.",prompts/scene_09_image.txt,prompts/scene_09_video.txt,clips/scene_09.mp4
+10,C,Belly breathing,80.0,90.0,10.0,"Cozy pastel treehouse bedroom, then the treehouse porch","Medium shot facing Mipo, calm and still.",prompts/scene_10_image.txt,prompts/scene_10_video.txt,clips/scene_10.mp4
+11,C,A little better,90.0,95.0,5.0,"Cozy pastel treehouse bedroom, then the treehouse porch",Close-up.,prompts/scene_11_image.txt,prompts/scene_11_video.txt,clips/scene_11.mp4
+12,C,Blue Bird comforts Mipo,95.0,105.0,10.0,"Cozy pastel treehouse bedroom, then the treehouse porch","Two-shot, Mipo and the bird on the railing.",prompts/scene_12_image.txt,prompts/scene_12_video.txt,clips/scene_12.mp4
+13,D,The wand glows and flies,105.0,115.0,10.0,Treehouse porch and path down into the valley,Inside-to-outside move: from the bedside table through the window to the porch.,prompts/scene_13_image.txt,prompts/scene_13_video.txt,clips/scene_13.mp4
+14,D,A sparkle trail,115.0,125.0,10.0,Treehouse porch and path down into the valley,"Medium shot, then pan to the trail leading into the valley.",prompts/scene_14_image.txt,prompts/scene_14_video.txt,clips/scene_14.mp4
+15,D,I'll bring it back,125.0,135.0,10.0,Treehouse porch and path down into the valley,Low-angle hero shot.,prompts/scene_15_image.txt,prompts/scene_15_video.txt,clips/scene_15.mp4
+16,D,Down the treehouse path,135.0,145.0,10.0,Treehouse porch and path down into the valley,Tracking shot following Mipo and the bird down a winding wooden path.,prompts/scene_16_image.txt,prompts/scene_16_video.txt,clips/scene_16.mp4
+17,D,Through the valley,145.0,155.0,10.0,Treehouse porch and path down into the valley,Wide travel shot.,prompts/scene_17_image.txt,prompts/scene_17_video.txt,clips/scene_17.mp4
+18,E,Welcome to the red garden,155.0,165.0,10.0,Red Strawberry Garden,"Wide establishing shot, slow push.",prompts/scene_18_image.txt,prompts/scene_18_video.txt,clips/scene_18.mp4
+19,E,Bunny peeks out,165.0,175.0,10.0,Red Strawberry Garden,Medium shot of a strawberry patch.,prompts/scene_19_image.txt,prompts/scene_19_video.txt,clips/scene_19.mp4
+20,E,Counting strawberries,175.0,185.0,10.0,Red Strawberry Garden,Top-down then side shot of a little basket.,prompts/scene_20_image.txt,prompts/scene_20_video.txt,clips/scene_20.mp4
+21,E,Asking about purple,185.0,195.0,10.0,Red Strawberry Garden,Two-shot.,prompts/scene_21_image.txt,prompts/scene_21_video.txt,clips/scene_21.mp4
+22,E,The bunny remembers,195.0,205.0,10.0,Red Strawberry Garden,"Close-up on the bunny, then whip-pan to a distant orange hill.",prompts/scene_22_image.txt,prompts/scene_22_video.txt,clips/scene_22.mp4
+23,E,A new friend joins,205.0,215.0,10.0,Red Strawberry Garden,"Medium shot, gentle push.",prompts/scene_23_image.txt,prompts/scene_23_video.txt,clips/scene_23.mp4
+24,E,Off to Pumpkin Hill,215.0,225.0,10.0,Red Strawberry Garden,Wide travel shot.,prompts/scene_24_image.txt,prompts/scene_24_video.txt,clips/scene_24.mp4
+25,F,Pumpkin Hill,225.0,235.0,10.0,Orange Pumpkin Hill,Wide establishing shot.,prompts/scene_25_image.txt,prompts/scene_25_video.txt,clips/scene_25.mp4
+26,F,Bunny slips,235.0,245.0,10.0,Orange Pumpkin Hill,Medium shot on a gentle slope.,prompts/scene_26_image.txt,prompts/scene_26_video.txt,clips/scene_26.mp4
+27,F,Helping hand,245.0,255.0,10.0,Orange Pumpkin Hill,Close two-shot.,prompts/scene_27_image.txt,prompts/scene_27_video.txt,clips/scene_27.mp4
+28,F,"Roll, pumpkin, roll!",255.0,265.0,10.0,Orange Pumpkin Hill,Wide side shot of the slope.,prompts/scene_28_image.txt,prompts/scene_28_video.txt,clips/scene_28.mp4
+29,F,A purple sparkle!,265.0,275.0,10.0,Orange Pumpkin Hill,"Close-up on a leaf, then rack focus to Mipo.",prompts/scene_29_image.txt,prompts/scene_29_video.txt,clips/scene_29.mp4
+30,F,Down to the sunflowers,275.0,285.0,10.0,Orange Pumpkin Hill,Tracking shot.,prompts/scene_30_image.txt,prompts/scene_30_video.txt,clips/scene_30.mp4
+31,G,Yellow like the sun,285.0,295.0,10.0,Yellow Sunflower Meadow,Wide establishing shot.,prompts/scene_31_image.txt,prompts/scene_31_video.txt,clips/scene_31.mp4
+32,G,Too tall!,295.0,305.0,10.0,Yellow Sunflower Meadow,Low angle looking up past Mipo at the giant sunflowers.,prompts/scene_32_image.txt,prompts/scene_32_video.txt,clips/scene_32.mp4
+33,G,Baby Deer appears,305.0,315.0,10.0,Yellow Sunflower Meadow,"Medium shot, sunflowers part.",prompts/scene_33_image.txt,prompts/scene_33_video.txt,clips/scene_33.mp4
+34,G,The deer looks,315.0,325.0,10.0,Yellow Sunflower Meadow,Over-the-shoulder from behind the deer looking over the sunflowers.,prompts/scene_34_image.txt,prompts/scene_34_video.txt,clips/scene_34.mp4
+35,G,Taking turns,325.0,335.0,10.0,Yellow Sunflower Meadow,Two-shot.,prompts/scene_35_image.txt,prompts/scene_35_video.txt,clips/scene_35.mp4
+36,G,Four friends together,335.0,345.0,10.0,Yellow Sunflower Meadow,Wide travel shot.,prompts/scene_36_image.txt,prompts/scene_36_video.txt,clips/scene_36.mp4
+37,H,Into the green forest,345.0,355.0,10.0,Green Whispering Forest,Wide establishing shot.,prompts/scene_37_image.txt,prompts/scene_37_video.txt,clips/scene_37.mp4
+38,H,A little scared,355.0,365.0,10.0,Green Whispering Forest,Medium close-up on Mipo.,prompts/scene_38_image.txt,prompts/scene_38_video.txt,clips/scene_38.mp4
+39,H,Holding hands,365.0,375.0,10.0,Green Whispering Forest,Two-shot then wide.,prompts/scene_39_image.txt,prompts/scene_39_video.txt,clips/scene_39.mp4
+40,H,Fireflies light the way,375.0,385.0,10.0,Green Whispering Forest,Slow crane up through glowing fireflies.,prompts/scene_40_image.txt,prompts/scene_40_video.txt,clips/scene_40.mp4
+41,H,Echo game,385.0,395.0,10.0,Green Whispering Forest,Medium shot of Mipo calling into a clearing.,prompts/scene_41_image.txt,prompts/scene_41_video.txt,clips/scene_41.mp4
+42,H,A frog's clue,395.0,405.0,10.0,Green Whispering Forest,Close-up on a lily pad by a forest pond.,prompts/scene_42_image.txt,prompts/scene_42_video.txt,clips/scene_42.mp4
+43,H,Out of the forest,405.0,415.0,10.0,Green Whispering Forest,Tracking shot toward bright light.,prompts/scene_43_image.txt,prompts/scene_43_video.txt,clips/scene_43.mp4
+44,I,The blue river,415.0,425.0,10.0,Blue Sparkle River and the stone bridge,Wide establishing shot.,prompts/scene_44_image.txt,prompts/scene_44_video.txt,clips/scene_44.mp4
+45,I,Stepping stones,425.0,435.0,10.0,Blue Sparkle River and the stone bridge,Side tracking shot across stepping stones.,prompts/scene_45_image.txt,prompts/scene_45_video.txt,clips/scene_45.mp4
+46,I,Slow and careful,435.0,445.0,10.0,Blue Sparkle River and the stone bridge,Medium shot.,prompts/scene_46_image.txt,prompts/scene_46_video.txt,clips/scene_46.mp4
+47,I,The stone bridge,445.0,455.0,10.0,Blue Sparkle River and the stone bridge,Side tracking shot across the arched stone bridge.,prompts/scene_47_image.txt,prompts/scene_47_video.txt,clips/scene_47.mp4
+48,I,Crystal cave entrance,455.0,465.0,10.0,Blue Sparkle River and the stone bridge,Slow push toward the cave mouth.,prompts/scene_48_image.txt,prompts/scene_48_video.txt,clips/scene_48.mp4
+49,I,Into the cave,465.0,475.0,10.0,Blue Sparkle River and the stone bridge,Tracking shot following them in.,prompts/scene_49_image.txt,prompts/scene_49_video.txt,clips/scene_49.mp4
+50,J,Grey crystals,475.0,485.0,10.0,Crystal Cave,Wide shot inside the cave.,prompts/scene_50_image.txt,prompts/scene_50_video.txt,clips/scene_50.mp4
+51,J,Someone is crying,485.0,495.0,10.0,Crystal Cave,Medium close-up on Mipo listening.,prompts/scene_51_image.txt,prompts/scene_51_video.txt,clips/scene_51.mp4
+52,J,Meet Little Purple,495.0,505.0,10.0,Crystal Cave,Close-up behind a crystal.,prompts/scene_52_image.txt,prompts/scene_52_video.txt,clips/scene_52.mp4
+53,J,We missed you!,505.0,515.0,10.0,Crystal Cave,"Close two-shot, Mipo kneeling.",prompts/scene_53_image.txt,prompts/scene_53_video.txt,clips/scene_53.mp4
+54,J,Friends say so too,515.0,525.0,10.0,Crystal Cave,Group shot.,prompts/scene_54_image.txt,prompts/scene_54_video.txt,clips/scene_54.mp4
+55,J,Little Purple smiles,525.0,535.0,10.0,Crystal Cave,"Close-up, warm light.",prompts/scene_55_image.txt,prompts/scene_55_video.txt,clips/scene_55.mp4
+56,J,Out of the cave,535.0,545.0,10.0,Crystal Cave,Tracking shot.,prompts/scene_56_image.txt,prompts/scene_56_video.txt,clips/scene_56.mp4
+57,K,Rainbow Hill,545.0,555.0,10.0,Rainbow Hill,"Wide, low angle.",prompts/scene_57_image.txt,prompts/scene_57_video.txt,clips/scene_57.mp4
+58,K,Ready?,555.0,565.0,10.0,Rainbow Hill,"Medium shot of Mipo and Little Purple, then Mipo turns to camera.",prompts/scene_58_image.txt,prompts/scene_58_video.txt,clips/scene_58.mp4
+59,K,Countdown,565.0,570.0,5.0,Rainbow Hill,"Close-up on the glowing wand tip, then Mipo.",prompts/scene_59_image.txt,prompts/scene_59_video.txt,clips/scene_59.mp4
+60,K,The tap: MAGIC!,570.0,575.0,5.0,Rainbow Hill,Close-up on the tap.,prompts/scene_60_image.txt,prompts/scene_60_video.txt,clips/scene_60.mp4
+61,K,Painting the stripe,575.0,585.0,10.0,Rainbow Hill,Tilt up from the friends to the sky.,prompts/scene_61_image.txt,prompts/scene_61_video.txt,clips/scene_61.mp4
+62,K,Purple everywhere,585.0,595.0,10.0,Rainbow Hill,Wide sweeping shot over the valley.,prompts/scene_62_image.txt,prompts/scene_62_video.txt,clips/scene_62.mp4
+63,K,Full rainbow,595.0,600.0,5.0,Rainbow Hill,Wide hero shot.,prompts/scene_63_image.txt,prompts/scene_63_video.txt,clips/scene_63.mp4
+64,L,Dance party,600.0,610.0,10.0,Rainbow Hill in full color,"Wide, gentle orbit.",prompts/scene_64_image.txt,prompts/scene_64_video.txt,clips/scene_64.mp4
+65,L,Rainbow color song,610.0,620.0,10.0,Rainbow Hill in full color,"Medium shot, Mipo pointing to each stripe.",prompts/scene_65_image.txt,prompts/scene_65_video.txt,clips/scene_65.mp4
+66,L,What we learned,620.0,630.0,10.0,Rainbow Hill in full color,Medium close-up of Mipo talking to camera.,prompts/scene_66_image.txt,prompts/scene_66_video.txt,clips/scene_66.mp4
+67,L,Remember,630.0,640.0,10.0,Rainbow Hill in full color,"Wide, calm.",prompts/scene_67_image.txt,prompts/scene_67_video.txt,clips/scene_67.mp4
+68,L,Goodbye wave,640.0,650.0,10.0,Rainbow Hill in full color,"Medium shot, Mipo looks straight at camera.",prompts/scene_68_image.txt,prompts/scene_68_video.txt,clips/scene_68.mp4
+69,L,End screen,650.0,660.0,10.0,Rainbow Hill in full color,Static wide shot with clear space on the right and top (for YouTube end-screen elements added in YouTube Studio).,prompts/scene_69_image.txt,prompts/scene_69_video.txt,clips/scene_69.mp4

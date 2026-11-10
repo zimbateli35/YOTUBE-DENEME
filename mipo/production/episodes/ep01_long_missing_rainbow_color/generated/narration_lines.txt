@@ -1,0 +1,84 @@
+L001	Hi, friends! I'm Mipo!
+L002	Look at my rainbow... Uh-oh!
+L003	One color is missing! Will you help me find it?
+L004	Yay! Let's go!
+L005	Good morning, Mipo! The sun is up, and the birds are singing.
+L006	Good morning, sunshine!
+L007	Oh no... where is the purple?
+L008	The purple stripe is gone. And look... the purple flowers are grey.
+L009	Mipo feels sad. That's okay. Everybody feels sad sometimes.
+L010	Let's take a big breath with Mipo. Smell the flower...
+L011	...and blow out the candle. One more time!
+L012	I feel a little better now.
+L013	Hello, Blue Bird. The rainbow lost its purple.
+L014	Tweet! Don't worry, Mipo. We can find it together!
+L015	Look! Mipo's magic wand is glowing!
+L016	A sparkle trail! It will show us the way!
+L017	Don't worry, rainbow. I'll bring your purple back!
+L018	Mipo feels brave now.
+L019	Are you ready, friends? Let's follow the sparkles!
+L020	Let's go!
+L021	Welcome to the Red Strawberry Garden! Everything here is... red!
+L022	Can you say red? ...Red!
+L023	Hi, Mipo! Do you want to help me pick strawberries?
+L024	Yes, please!
+L025	Let's count them together! One... two... three... four... five!
+L026	Five yummy strawberries! Thank you, Mipo.
+L027	Bunny, have you seen the purple from the rainbow?
+L028	Hmm... I saw purple sparkles hopping over Pumpkin Hill!
+L029	Will you come with us?
+L030	Hop, hop... yes!
+L031	Now Mipo has two friends. Friends make adventures more fun!
+L032	This is Pumpkin Hill. What color are the pumpkins?
+L033	Orange!
+L034	Are you okay, Bunny? Take my hand.
+L035	Thank you, Mipo! You are a good friend.
+L036	Helping a friend feels warm and happy inside.
+L037	Whoa! Roll, pumpkin, roll!
+L038	Look! A purple sparkle! It went that way!
+L039	Yellow, yellow, like the sun!
+L040	Can you find something yellow where you are?
+L041	Hmm... the sunflowers are so tall. I can't see the sparkles!
+L042	Hello! I'm tall. Maybe I can help!
+L043	I see the sparkles! They are going into the Green Forest.
+L044	Thank you, Deer! Will you come too?
+L045	Yes! Let's take turns leading the way.
+L046	Taking turns is a kind thing to do.
+L047	This is the Whispering Forest. Green leaves, green moss... green everywhere!
+L048	It's a little dark in here... I feel a bit scared.
+L049	When we feel scared, we can hold a friend's hand.
+L050	We're right here, Mipo.
+L051	Together... I feel brave!
+L052	Look! The fireflies are lighting the way!
+L053	Hellooo!
+L054	...hellooo... Can you say hello with Mipo? Hellooo!
+L055	Tweet! The frog says a little purple drop went to the river!
+L056	Blue, blue... the river is blue!
+L057	And the sky is blue too!
+L058	Let's count the stones as we hop! One... two... three...
+L059	...four... five... six!
+L060	Slow and careful. Good job, friends!
+L061	The sparkles go into that cave!
+L062	The crystals here should be purple... but they are grey.
+L063	Shh... listen. Someone is crying.
+L064	I'm the purple. I felt so small... I thought nobody would miss me.
+L065	We missed you so much! The rainbow needs you!
+L066	Every color is important. And every friend is important too.
+L067	We need you!
+L068	You make the flowers pretty!
+L069	Tweet, tweet! Come home!
+L070	Really? Okay! Let's go home!
+L071	Mipo and his friends climb to the top of Rainbow Hill.
+L072	Are you ready, Little Purple?
+L073	Ready!
+L074	Friends at home, count with me!
+L075	Three... two... one!
+L076	MAGIC!
+L077	Swish! The purple goes back into the rainbow!
+L078	The rainbow is complete!
+L079	Hooray! We did it!
+L080	Hooray for Mipo and his friends!
+L081	Red, orange, yellow, green, blue... and purple!
+L082	Today I felt sad, then brave, then happy! And my friends helped me.
+L083	Remember: it's okay to feel sad, friends help each other, and every color is important.
+L084	Thank you for helping me, friends! See you next magic moment!

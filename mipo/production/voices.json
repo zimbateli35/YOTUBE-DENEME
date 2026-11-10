@@ -1,0 +1,97 @@
+{
+  "notes": [
+    "Voice cast for Mipo's Magical World. One fixed ElevenLabs voice per character, reused in every episode.",
+    "Voice IDs are NOT stored here. Each character points to an environment variable (set it in mipo/.env).",
+    "Never clone a real child's voice. Use ElevenLabs Voice Design (or a licensed library voice / adult voice actor) and keep the same Voice ID forever.",
+    "Episode 1 Shorts (30 s): every line is Mipo. Episode 1 long edition (11 min): narrator + Mipo + Blue Bird + Bunny + Baby Deer + Little Purple."
+  ],
+  "defaults": {
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_128",
+    "language_code": "en"
+  },
+  "cast": {
+    "mipo": {
+      "role": "dialogue",
+      "voice_id_env": "ELEVENLABS_VOICE_MIPO",
+      "legacy_env": "ELEVENLABS_VOICE_ID",
+      "description": "Mipo: warm, cheerful, natural young boy, about 6-7 years old, clear American English, friendly storyteller energy, calm, gentle excitement, never shouting.",
+      "voice_design_prompt": "A warm, cheerful young American boy, about 6 or 7 years old, speaking clearly and gently like a friendly storyteller for small children. Bright and curious, soft smile in the voice, calm pace, never shouty. Clean studio recording.",
+      "voice_settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "seed": 2401
+    },
+    "narrator": {
+      "role": "narration",
+      "voice_id_env": "ELEVENLABS_VOICE_NARRATOR",
+      "description": "Storyteller (future episodes): warm, friendly, gentle adult storyteller, clear American English, soothing and playful, slow enough for ages 2-7.",
+      "voice_design_prompt": "A warm, friendly adult storyteller reading a picture book to young children. Gentle, playful, clear American English, slow and soothing pace, smiling tone. Clean studio recording.",
+      "voice_settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.25,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "seed": 2402
+    },
+    "bird": {
+      "role": "dialogue",
+      "voice_id_env": "ELEVENLABS_VOICE_BIRD",
+      "description": "Blue Bird (non-speaking in Ep1; chirps are SFX). If it speaks later: tiny, bright, sing-song, cheerful.",
+      "voice_settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "seed": 2403
+    },
+    "bunny": {
+      "role": "dialogue",
+      "voice_id_env": "ELEVENLABS_VOICE_BUNNY",
+      "description": "White Bunny (non-speaking in Ep1). If it speaks later: soft, shy, sweet, gentle giggle.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "seed": 2404
+    },
+    "deer": {
+      "role": "dialogue",
+      "voice_id_env": "ELEVENLABS_VOICE_DEER",
+      "description": "Baby Deer (non-speaking in Ep1). If it speaks later: gentle, kind, a little slow and dreamy.",
+      "voice_settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.25,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "seed": 2405
+    },
+    "little_purple": {
+      "role": "dialogue",
+      "voice_id_env": "ELEVENLABS_VOICE_LITTLE_PURPLE",
+      "description": "Little Purple (Ep1 long edition): tiny, soft, shy at first, then bubbly and joyful.",
+      "voice_design_prompt": "A tiny, soft, sweet magical voice of a shy little paint droplet, gentle and bubbly when happy, clear American English, for young children. Clean studio recording.",
+      "voice_settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "seed": 2406
+    }
+  }
+}
