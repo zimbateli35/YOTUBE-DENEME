@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>MiniHome</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="home" class="view active">
+    <header class="top">
+      <div>
+        <div id="clock" class="clock">--:--</div>
+        <div id="date" class="date"></div>
+      </div>
+      <div id="greeting" class="greeting"></div>
+    </header>
+    <section id="grid" class="grid"></section>
+    <footer class="hint">
+      <span><b>OK</b> Aç</span>
+      <span><i class="k red"></i> Kaldır</span>
+      <span><i class="k green"></i> Sola taşı</span>
+      <span><i class="k yellow"></i> Sağa taşı</span>
+    </footer>
+  </main>
+
+  <main id="picker" class="view">
+    <header class="top">
+      <div class="title">Uygulama ekle / çıkar</div>
+      <div class="sub">OK: seç &nbsp;•&nbsp; Geri: ana ekrana dön</div>
+    </header>
+    <section id="pickerGrid" class="grid small"></section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
